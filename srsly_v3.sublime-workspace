@@ -1,0 +1,177 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 265.0,
+		"selected_items":
+		[
+			[
+				"apck",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/home.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/base.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/header.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.css",
+		"/C/Users/vix/Dropbox/Web Design/Labs/profitTracker/index.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/inedx.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl.css",
+		"/C/Users/vix/Dropbox/Web Design/CHRC/chalfont_heights/archive.php",
+		"/C/Users/vix/Dropbox/Web Design/CHRC/chalfont_heights/footer.php",
+		"/C/Users/vix/Dropbox/Web Design/CHRC/chalfont_heights/index.php",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/testimonials.html",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/contact.html",
+		"/C/Users/vix/Dropbox/Web Design/Labs/tamigotchi/Tamigotchi.js",
+		"/C/Users/vix/Dropbox/Web Design/Labs/tamigotchi/tamigotchi.html",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/mailer.php",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/feedback.php",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/clinical_hypnotherapy.html",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/index.html",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/error.html",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/about_emily.html",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/js/init.js",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/TEP.html",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/body_mind.html",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/css/styles.css",
+		"/C/Users/vix/Dropbox/Web Design/Ellie_new/thanks.html",
+		"/C/Users/vix/Dropbox/Web Design/Labs/tamigotchi.html",
+		"/C/Users/vix/Dropbox/Web Design/Labs/Tamigotchi.js",
+		"/C/Users/vix/Dropbox/Web Design/AFS/contact.html"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"’",
+			"yourEmail",
+			"yourName",
+			"name",
+			"yourEmail",
+			"yourName"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
