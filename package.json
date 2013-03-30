@@ -1,0 +1,21 @@
+{
+  "name": "SRSLY_v3",
+  "version": "0.0.1",
+  "description": "SRSLY website mark 3",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fruitbat2000/SRSLY_v3.git"
+  },
+  "author": "Vicki Keeley",
+  "readmeFilename": "README.md",
+  "gitHead": "b20ec47d8ca91a3dfbe5e4d6f241bbc8daabbfce",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.3.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-stylus": "~0.5.0"
+  }
+}

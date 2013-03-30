@@ -1,3 +1,13 @@
-.header{border:1px solid #008000}
-.base{color:#f00}
-.home{width:400px}
+.header {
+  border: 1px solid #008000;
+  width: 500px;
+}
+.base {
+  color: #f00;
+  width: 500px;
+}
+.home {
+  width: 400px;
+  color: #f00;
+  height: 200px;
+}
