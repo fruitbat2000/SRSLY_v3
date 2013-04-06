@@ -1,13 +1,393 @@
-.header {
-  border: 1px solid #008000;
-  width: 500px;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-.base {
-  color: #f00;
-  width: 500px;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-.home {
-  width: 400px;
-  color: #f00;
-  height: 200px;
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background: #f2f1d4;
+  font-family: "Quan-RoundedLight", Arial, sans-serif;
+  color: #333;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 15px 0;
+}
+h1 {
+  font-family: "Museo-300", Arial, sans-serif;
+  font-size: 56px;
+  font-size: 5.6rem;
+}
+h2 {
+  font-size: 30px;
+  font-size: 3rem;
+}
+h3 {
+  font-size: 20px;
+  font-size: 2rem;
+}
+h4 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+a {
+  color: #333;
+  text-decoration: underline;
+}
+a:hover {
+  color: #c03f33;
+}
+#wrapper {
+  width: 1180px;
+  float: none;
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.column {
+  width: 140px;
+}
+.column_2 {
+  width: 280px;
+}
+.column_3 {
+  width: 420px;
+}
+.column_4 {
+  width: 560px;
+}
+.row1,
+.row2,
+.row3,
+.row4 {
+  float: none;
+  clear: both;
+  overflow: hidden;
+}
+@import url("//hello.myfonts.net/count/266daa");
+@font-face {
+  font-family: 'Museo-700';
+  src: url("../fonts/266DAA_0_0.eot");
+  src: url("../fonts/266DAA_0_0.eot?#iefix") format('embedded-opentype'), url("../fonts/266DAA_0_0.woff") format('woff'), url("../fonts/266DAA_0_0.ttf") format('truetype'), url("../fonts/266DAA_0_0.svg#wf") format('svg');
+}
+@font-face {
+  font-family: 'Museo-300';
+  src: url("../fonts/266DAA_1_0.eot");
+  src: url("../fonts/266DAA_1_0.eot?#iefix") format('embedded-opentype'), url("../fonts/266DAA_1_0.woff") format('woff'), url("../fonts/266DAA_1_0.ttf") format('truetype'), url("../fonts/266DAA_1_0.svg#wf") format('svg');
+}
+@font-face {
+  font-family: 'Quan-RoundedLight';
+  src: url("../fonts/266DAA_2_0.eot");
+  src: url("../fonts/266DAA_2_0.eot?#iefix") format('embedded-opentype'), url("../fonts/266DAA_2_0.woff") format('woff'), url("../fonts/266DAA_2_0.ttf") format('truetype'), url("../fonts/266DAA_2_0.svg#wf") format('svg');
+}
+@font-face {
+  font-family: 'Quan-RoundedLightOblique';
+  src: url("../fonts/266DAA_3_0.eot");
+  src: url("../fonts/266DAA_3_0.eot?#iefix") format('embedded-opentype'), url("../fonts/266DAA_3_0.woff") format('woff'), url("../fonts/266DAA_3_0.ttf") format('truetype'), url("../fonts/266DAA_3_0.svg#wf") format('svg');
+}
+@font-face {
+  font-family: 'Quan-RoundedBook';
+  src: url("../fonts/266DAA_4_0.eot");
+  src: url("../fonts/266DAA_4_0.eot?#iefix") format('embedded-opentype'), url("../fonts/266DAA_4_0.woff") format('woff'), url("../fonts/266DAA_4_0.ttf") format('truetype'), url("../fonts/266DAA_4_0.svg#wf") format('svg');
+}
+@font-face {
+  font-family: 'Quan-RoundedBoldOblique';
+  src: url("../fonts/266DAA_5_0.eot");
+  src: url("../fonts/266DAA_5_0.eot?#iefix") format('embedded-opentype'), url("../fonts/266DAA_5_0.woff") format('woff'), url("../fonts/266DAA_5_0.ttf") format('truetype'), url("../fonts/266DAA_5_0.svg#wf") format('svg');
+}
+@font-face {
+  font-family: 'Quan-RoundedBold';
+  src: url("../fonts/266DAA_6_0.eot");
+  src: url("../fonts/266DAA_6_0.eot?#iefix") format('embedded-opentype'), url("../fonts/266DAA_6_0.woff") format('woff'), url("../fonts/266DAA_6_0.ttf") format('truetype'), url("../fonts/266DAA_6_0.svg#wf") format('svg');
+}
+header {
+  float: none;
+  clear: both;
+  overflow: hidden;
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+header .logo {
+  float: left;
+}
+header .logo h1 {
+  margin-bottom: 0;
+  line-height: 1;
+}
+header .logo h1 span {
+  font-family: "Museo-700", Arial, sans-serif;
+}
+header .logo h2 {
+  font-family: "Quan-RoundedBook", Arial, sans-serif;
+  line-height: 1;
+  font-size: 31px;
+  font-size: 3.1rem;
+  margin-bottom: 0;
+}
+header nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+}
+header nav li {
+  display: inline;
+  margin-right: 40px;
+}
+header nav li.last {
+  margin-right: 0;
+}
+header nav li a {
+  font-size: 30px;
+  font-size: 3rem;
+  font-family: "Quan-RoundedBook", Arial, sans-serif;
+}
+.col1 {
+  float: left;
+}
+.col2 {
+  float: right;
+}
+#intro {
+  margin-bottom: 50px;
+}
+#intro h1.inline-title {
+  display: inline;
+  line-height: 1em;
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+#intro p {
+  display: inline;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+.main-image {
+  margin-bottom: 20px;
+  min-height: 1px;
+}
+#skills {
+  background: #333;
+  color: #f2f1d4;
+  font-family: "Quan-RoundedBold", Arial, sans-serif;
+  padding: 10px 15px 15px 15px;
+  border-radius: 7px;
+}
+#skills h2,
+#skills h3 {
+  margin: 0;
+}
+.feature-nav {
+  margin-bottom: 50px;
+}
+.feature-nav li {
+  margin-bottom: 5px;
+  position: relative;
+  float: none;
+  clear: both;
+  overflow: hidden;
+}
+.feature-nav li a {
+  width: 86%;
+  display: block;
+  text-align: right;
+  height: 80px;
+  float: right;
+  border-radius: 7px;
+  color: #f2f1d4;
+  text-decoration: none;
+  font-family: "Museo-300", Arial, sans-serif;
+  font-size: 36px;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  line-height: 80px;
+  padding-right: 20px;
+}
+.feature-nav li a:hover {
+  color: #f2f1d4;
+}
+.feature-nav li.first a,
+.feature-nav li.first span {
+  background: #098c7f;
+}
+.feature-nav li.second a,
+.feature-nav li.second span {
+  background: #f28b39;
+}
+.feature-nav li.third a,
+.feature-nav li.third span {
+  background: #c03f33;
+}
+.feature-nav li span {
+  width: 72px;
+  height: 72px;
+  border-radius: 40px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 4px solid #f2f1d4;
+  z-index: 1;
+  color: #f2f1d4;
+  font-family: "Museo-700", Arial, sans-serif;
+  font-size: 48px;
+  font-size: 4.8rem;
+  text-align: center;
+  line-height: 68px;
+}
+.twitter {
+  text-align: right;
+}
+.twitter h2 {
+  width: auto;
+  height: 25px;
+  background: #333;
+  background: -webkit-linear-gradient(45deg, transparent 250px, #333 1px);
+  background: -moz-linear-gradient(45deg, transparent 250px, #333 1px);
+  background: -o-linear-gradient(45deg, transparent 250px, #333 1px);
+  background: linear-gradient(45deg, transparent 250px, #333 1px);
+  color: #f2f1d4;
+  padding-right: 10px;
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 1em;
+  margin-bottom: 5px;
+}
+.twitter p {
+  font-family: "Quan-RoundedLightOblique", Arial, sans-serif;
 }

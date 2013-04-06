@@ -1,0 +1,53 @@
+clearfix()
+	float:none;
+	clear:both;
+	overflow:hidden;
+
+font-size-rem($sizeValue)
+	font-size ($sizeValue * 10) px
+	font-size $sizeValue rem
+
+angled-banner()
+	background:-webkit-linear-gradient(arguments);
+	background:-moz-linear-gradient(arguments);
+	background:-o-linear-gradient(arguments);
+	background:linear-gradient(arguments);
+
+html
+	font-size:62.5%;
+	margin:0;
+	padding:0;
+
+body
+	font-size-rem(1.8)
+	background:#f2f1d4;
+	font-family: "Quan-RoundedLight", Arial, sans-serif;
+	color:#333333;
+	line-height:1.2;
+	margin:0;
+	padding:0;
+
+p
+	font-size-rem(1.8)
+
+h1, h2, h3, h4, h5
+	margin:0 0 15px 0;
+
+h1
+	font-family: "Museo-300", Arial, sans-serif;
+	font-size-rem(5.6);
+
+h2
+	font-size-rem(3);
+
+h3
+	font-size-rem(2);
+
+h4
+	font-size-rem(1.8);
+
+a 
+	color:#333333;
+	text-decoration:underline;
+	&:hover
+		color:#c03f33;

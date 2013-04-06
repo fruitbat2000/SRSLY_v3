@@ -3,6 +3,10 @@
 	{
 		"selected_items":
 		[
+			[
+				"home",
+				"home_template"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +15,87 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1793,
+				"buffer_size": 790,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 162,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/modules/home.styl",
+			"settings":
+			{
+				"buffer_size": 1601,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/base/base.styl",
+			"settings":
+			{
+				"buffer_size": 817,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/modules/header.styl",
+			"settings":
+			{
+				"buffer_size": 563,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/components/views.js",
+			"settings":
+			{
+				"buffer_size": 277,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/components/models.js",
+			"settings":
+			{
+				"buffer_size": 134,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/base/layout.styl",
+			"settings":
+			{
+				"buffer_size": 223,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/fonts/fonts.styl",
+			"settings":
+			{
+				"buffer_size": 4059,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 1089,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/index.styl",
+			"settings":
+			{
+				"buffer_size": 218,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,23 +103,15 @@
 			"file": "css/index.css",
 			"settings":
 			{
-				"buffer_size": 71,
+				"buffer_size": 7067,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/vix/Dropbox/Web Design/Labs/profitTracker/js/main.js",
-			"settings":
-			{
-				"buffer_size": 167,
-				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 265.0,
+		"height": 334.0,
 		"selected_items":
 		[
 			[
@@ -47,7 +123,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -64,12 +140,27 @@
 	},
 	"file_history":
 	[
+		"/C/Users/vkeeley/Dropbox/Web Design/SRSLY_v3/js/libs/underscore.js",
+		"/C/Users/vkeeley/Dropbox/Web Design/SRSLY_v3/js/text.js",
+		"/C/xampp/htdocs/ColgateOralCare/Reviews/common/js/lib/hbs/i18nprecompile.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/jquery.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/templates/home.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/handlebars.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/require.js",
+		"/C/Users/vix/Downloads/MyFontsWebfontsKit/MyFontsWebfontsKit/MyFontsWebfontsKit.css",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/modernizr.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/main.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/modules/base.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/base/base - Copy.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.css",
+		"/C/Users/vix/Downloads/MyFontsWebfontsOrderM4455651/MyFontsWebfontsOrderM4455651/MyFontsWebfontsOrderM4455651.js",
+		"/C/Users/vix/Downloads/SRSLY_fonts/SRSLY_fonts/SRSLY_fonts.css",
+		"/C/Users/vix/Dropbox/Web Design/Labs/profitTracker/js/main.js",
 		"/C/Users/vix/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/home.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/base.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/header.styl",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.css",
 		"/C/Users/vix/Dropbox/Web Design/Labs/profitTracker/index.html",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/inedx.styl",
@@ -112,6 +203,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"));\n",
+			"webfonts",
+			"black",
+			"fonts",
+			"../../../",
+			"webfonts",
 			"’",
 			"yourEmail",
 			"yourName",
@@ -125,6 +222,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"../fonts",
+			"../",
+			"../../../fonts",
 			"'"
 		],
 		"reverse": false,
@@ -136,7 +236,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -144,15 +244,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1793,
+						"buffer_size": 790,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1793,
-								1793
+								758,
+								758
 							]
 						],
 						"settings":
@@ -168,23 +268,23 @@
 				},
 				{
 					"buffer": 1,
-					"file": "css/index.css",
+					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 71,
+						"buffer_size": 162,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								79,
+								79
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -194,10 +294,250 @@
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Users/vix/Dropbox/Web Design/Labs/profitTracker/js/main.js",
+					"file": "css/css_stylus/modules/home.styl",
 					"settings":
 					{
-						"buffer_size": 167,
+						"buffer_size": 1601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1143,
+								1143
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/css_stylus/base/base.styl",
+					"settings":
+					{
+						"buffer_size": 817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/css_stylus/modules/header.styl",
+					"settings":
+					{
+						"buffer_size": 563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/components/views.js",
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/components/models.js",
+					"settings":
+					{
+						"buffer_size": 134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "css/css_stylus/base/layout.styl",
+					"settings":
+					{
+						"buffer_size": 223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "css/css_stylus/fonts/fonts.styl",
+					"settings":
+					{
+						"buffer_size": 4059,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3146,
+								3146
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 7.0,
+						"translation.y": 109.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 1089,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								443,
+								443
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "css/css_stylus/index.styl",
+					"settings":
+					{
+						"buffer_size": 218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "css/index.css",
+					"settings":
+					{
+						"buffer_size": 7067,
 						"regions":
 						{
 						},
@@ -210,10 +550,12 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2511.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -227,7 +569,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{

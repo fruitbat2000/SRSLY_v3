@@ -1,46 +1,29 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>SRSLY Front-end development | seriously good &lsaquo;code&rsaquo;</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/libs/modernizr.js"></script>
+	<script data-main="js/main" src="js/require.js"></script>
 </head>
 <body>
 	<div id="wrapper">
 		<header>
-			<h1 class="logo">$(<span>SRSLY</span>);</h1>
-			<h2>seriously good &lsaquo;code&rsaquo;</h2>
-			<nav>
+			<div class="column_4 logo">
+				<h1>$(<span>SRSLY</span>);</h1>
+				<h2>seriously good &lsaquo;code&rsaquo;</h2>
+			</div>
+			<nav class="column_4">
 				<ul>
 					<li><a href="">Work</a></li>
 					<li><a href="">Labs</a></li>
-					<li><a href="">About</a></li>
+					<li class="last"><a href="">About</a></li>
 				</ul>
 			</nav>
 		</header>
-		<div class="main-image"></div>
-		<div class="col1">
-			<section id="intro">
-				<h1 class="inline-title">Hello World!</h1>
-				<p>Welcome to my small corner of the interwebs. I'm a front end web developer who's serious about making great web experiences across all manner of platforms and projects. I've been lucky enough to work for some of the world's biggest brands - you can take a look at my <a href="">WORK</a> here. When I'm not coding, I'm generally... coding, so take a look at some of my 'for fun' projects in the <a href="">LABS</a> section.</p>
-			</section>
-			<section id="skills">
-				<h2>mainSkills = [HTML(5), CSS(3), JavaScript, jQuery];</h2>
-				<h3>haveUsed = [knockout.js, backbone.js, require.js, node.js, grunt, stylus];</h3>
-				<h3>otherSkills = [WordPress theme development, web design, branding];</h3>
-			</section>
-		</div>
-		<div class="col2">
-			<nav class="feature-nav">
-				<ul>
-					<li><a href="">Work</a></li>
-					<li><a href="">Labs</a></li>
-					<li><a href="">About</a></li>
-				</ul>
-			</nav>
-			<section class="twitter">
-				<h2>Twitter</h2>
-				<p>Here's a fake tweet Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <br>Date: 22/2/13. Time: 13.42:</p>
-			</section>
-		</div>
+		<div id="content"></div>
 	</div>
 </body>
 </html>

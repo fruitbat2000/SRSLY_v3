@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       compile: {
         options: {
           compress:false,
-          paths: ['css/css_stylus', 'css_stylus/modules']
+          paths: ['css/css_stylus', 'css_stylus/**/']
         },
         files: {
           'css/index.css': 'css/css_stylus/index.styl'

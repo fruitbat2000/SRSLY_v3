@@ -1,5 +1,32 @@
-//header.styl
-.header {
-	border:1px solid green;
-	width:500px;
-}
+header
+	clearfix()
+	margin-top:30px;
+	position:relative;
+	margin-bottom:20px;
+	& .logo
+		float:left;
+		& h1 
+			margin-bottom:0;
+			line-height:1;
+			& span 
+				font-family:"Museo-700", Arial, sans-serif;
+		& h2
+			font-family:"Quan-RoundedBook", Arial, sans-serif;
+			line-height:1;
+			font-size-rem(3.1);
+			margin-bottom:0;
+	& nav
+		position:absolute;
+		right:0;
+		bottom:0;
+		text-align:right;
+		& li
+			display:inline;
+			margin-right:40px;
+			&.last
+				margin-right:0;
+			& a
+				font-size-rem(3);
+				font-family:"Quan-RoundedBook", Arial, sans-serif;
+
+
