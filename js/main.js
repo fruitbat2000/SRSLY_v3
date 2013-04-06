@@ -1,12 +1,26 @@
+require.config({
+	shim: {
+		"libs/handlebars": {
+			exports: 'Handlebars'
+		},
+		"libs/underscore": {
+			exports: '_'
+		},
+		"libs/backbone": {
+			deps: ['libs/underscore', 'libs/jquery'],
+			exports: 'Backbone'
+		}
+	}
+})
 require([
 	"libs/jquery",
-	"components/views",
-	"components/models",
-	"libs/handlebars"
+	"libs/underscore",
+	"libs/backbone",
+	"libs/handlebars",
+	"components/home-view",
+	"components/models"
 ],
 
-function($, views, models, handlebars) {
-
-console.log('main.js');
+function($, _, Backbone, Handlebars, homeView, models) {
 
 });

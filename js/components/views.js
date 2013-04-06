@@ -1,14 +1,15 @@
 define([
-	"text!templates/home.html",
-	"components/models"
+	"templates/home",
+	"components/models",
+	"libs/handlebars"
 ], 
 
-function(home_template, models) {
+function(home, models, Handlebars) {
 
-	var compiledTemplate = Handlebars.compile(home_template);
+	var home_tmpl = Handlebars.templates['home.html'];
 
 	var render = function(tmpl, context) {
 		$("#content").html(tmpl(context));
 	}
-	render(compiledTemplate, models);
+	render(home_tmpl, models);
 });
