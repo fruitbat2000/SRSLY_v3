@@ -4,8 +4,12 @@
 		"selected_items":
 		[
 			[
+				"init",
+				"initEvents"
+			],
+			[
 				"home",
-				"home_template"
+				"home_tmpl"
 			]
 		]
 	},
@@ -15,7 +19,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 790,
+				"buffer_size": 863,
 				"line_ending": "Windows"
 			}
 		},
@@ -23,39 +27,81 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 162,
+				"buffer_size": 1507,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/css_stylus/modules/home.styl",
+			"file": "js/components/app-view.js",
 			"settings":
 			{
-				"buffer_size": 1601,
+				"buffer_size": 322,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/css_stylus/base/base.styl",
+			"file": "js/components/home-view.js",
 			"settings":
 			{
-				"buffer_size": 817,
+				"buffer_size": 357,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/css_stylus/modules/header.styl",
+			"file": "js/components/work-view.js",
 			"settings":
 			{
-				"buffer_size": 563,
+				"buffer_size": 628,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/components/views.js",
+			"file": "js/components/detail-view.js",
 			"settings":
 			{
-				"buffer_size": 277,
+				"buffer_size": 695,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 1875 files for \"detailView\"\n\nC:\\Users\\vix\\Dropbox\\Web Design\\SRSLY_v3\\js\\main.js:\n   24  ],\n   25  \n   26: function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, models) {\n   27  \n   28  	Backbone.View.prototype.close = function(){\n   ..\n   59  		folio: function(id) {\n   60  			var self = this;\n   61: 			var detailView = new DetailView();\n   62  			console.log('folio router');\n   63: 			this.appView.showView(detailView, id);\n   64: 			/*detailView.on('detail view', function(id) {\n   65  				console.log('triggered');\n   66  				self.navigate('folio/'+id);\n   67: 				self.appView.showView(detailView, id);\n   68  			});*/\n   69  		}\n\nC:\\Users\\vix\\Dropbox\\Web Design\\SRSLY_v3\\js\\components\\detail-view.js:\n    8  function(templates, folioCollection, Handlebars, Backbone) {\n    9  \n   10: 	var DetailView = Backbone.View.extend({\n   11  		el: '#content',\n   12  		tmpl: hbs.detail,\n   ..\n   36  	});\n   37  \n   38: 	return DetailView;\n   39  });\n\nC:\\Users\\vix\\Dropbox\\Web Design\\SRSLY_v3\\node_modules\\grunt-contrib-handlebars\\node_modules\\handlebars\\node_modules\\uglify-js\\tmp\\app.js:\n 16024  }).call(this);\n 16025  }, \"main\": function(exports, require, module) {(function() {\n 16026:   var ClientsBillingView, ClientsDashboardView, ClientsForgotPasswordView, ClientsInviteView, ClientsLoginView, ClientsPromotionsView, ClientsRequestsView, ClientsRouter, ClientsSettingsView, ClientsSignUpView, Config, ConfirmEmailView, CountriesCollection, CreditCardView, LocationsCollection, PaymentProfilesCollection, SharedFooterView, SharedMenuView, TripDetailView, TripsCollection;\n 16027    Config = require('lib/config').config;\n 16028    window.i18n = require('web-lib/i18n').i18n;\n .....\n 16069    ClientsSettingsView = require('views/clients/settings').ClientsSettingsView;\n 16070    ClientsRequestsView = require('views/clients/request').ClientsRequestView;\n 16071:   TripDetailView = require('views/clients/trip_detail').TripDetailView;\n 16072    CreditCardView = require('views/clients/modules/credit_card').CreditCardView;\n 16073    $(document).ready(function() {\n .....\n 16106        app.views.clients.promotions = new ClientsPromotionsView();\n 16107        app.views.clients.settings = new ClientsSettingsView();\n 16108:       app.views.clients.tripdetail = new TripDetailView();\n 16109        app.views.clients.billing = new ClientsBillingView();\n 16110        app.views.clients.confirmemail = new ConfirmEmailView();\n .....\n 20256    };\n 20257    clientsTripDetailTemplate = require('templates/clients/trip_detail');\n 20258:   exports.TripDetailView = (function() {\n 20259:     __extends(TripDetailView, UberView);\n 20260:     function TripDetailView() {\n 20261        this.resendReceipt = __bind(this.resendReceipt, this);\n 20262:       TripDetailView.__super__.constructor.apply(this, arguments);\n 20263      }\n 20264:     TripDetailView.prototype.id = 'trip_detail_view';\n 20265:     TripDetailView.prototype.className = 'view_container';\n 20266:     TripDetailView.prototype.events = {\n 20267        'click a#fare_review': 'showFareReview',\n 20268        'click #fare_review_hide': 'hideFareReview',\n .....\n 20271        'click .resendReceipt': 'resendReceipt'\n 20272      };\n 20273:     TripDetailView.prototype.render = function(id) {\n 20274        if (id == null) {\n 20275          id = 'invalid';\n .....\n 20340        return this;\n 20341      };\n 20342:     TripDetailView.prototype.showFareReview = function(e) {\n 20343        e.preventDefault();\n 20344        $('#fare_review_box').slideDown();\n 20345        return $('#fare_review').hide();\n 20346      };\n 20347:     TripDetailView.prototype.hideFareReview = function(e) {\n 20348        e.preventDefault();\n 20349        $('#fare_review_box').slideUp();\n 20350        return $('#fare_review').show();\n 20351      };\n 20352:     TripDetailView.prototype.submitFareReview = function(e) {\n 20353        var attrs, errorMessage, id, options;\n 20354        e.preventDefault();\n .....\n 20374        return this.model.save(attrs, options);\n 20375      };\n 20376:     TripDetailView.prototype.resendReceipt = function(e) {\n 20377        var $e;\n 20378        e.preventDefault();\n .....\n 20403        });\n 20404      };\n 20405:     return TripDetailView;\n 20406    })();\n 20407  }).call(this);\n\n25 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 4313,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "js/templates/projectThumbs.html",
+			"settings":
+			{
+				"buffer_size": 355,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/templates/detail.html",
+			"settings":
+			{
+				"buffer_size": 420,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/modules/work.styl",
+			"settings":
+			{
+				"buffer_size": 649,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/modules/detail.styl",
+			"settings":
+			{
+				"buffer_size": 928,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,7 +109,39 @@
 			"file": "js/components/models.js",
 			"settings":
 			{
-				"buffer_size": 134,
+				"buffer_size": 4709,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/templates/home.html",
+			"settings":
+			{
+				"buffer_size": 1749,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/templates/work.html",
+			"settings":
+			{
+				"buffer_size": 325,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/base/base.styl",
+			"settings":
+			{
+				"buffer_size": 483,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/base/mixins.styl",
+			"settings":
+			{
+				"buffer_size": 582,
 				"line_ending": "Windows"
 			}
 		},
@@ -71,23 +149,7 @@
 			"file": "css/css_stylus/base/layout.styl",
 			"settings":
 			{
-				"buffer_size": 223,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/css_stylus/fonts/fonts.styl",
-			"settings":
-			{
-				"buffer_size": 4059,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 1089,
+				"buffer_size": 433,
 				"line_ending": "Windows"
 			}
 		},
@@ -95,16 +157,24 @@
 			"file": "css/css_stylus/index.styl",
 			"settings":
 			{
-				"buffer_size": 218,
+				"buffer_size": 288,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/index.css",
+			"file": "js/templates/templates.js",
 			"settings":
 			{
-				"buffer_size": 7067,
+				"buffer_size": 9137,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/css_stylus/modules/home.styl",
+			"settings":
+			{
+				"buffer_size": 2180,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -140,19 +210,35 @@
 	},
 	"file_history":
 	[
-		"/C/Users/vkeeley/Dropbox/Web Design/SRSLY_v3/js/libs/underscore.js",
-		"/C/Users/vkeeley/Dropbox/Web Design/SRSLY_v3/js/text.js",
-		"/C/xampp/htdocs/ColgateOralCare/Reviews/common/js/lib/hbs/i18nprecompile.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/views.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/app-view.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/gruntfile.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.css",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/fonts/fonts.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/listPartial.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/node_modules/grunt/AUTHORS",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/list-partial.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/partials/list-partial.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/router.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/text.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/modules/header.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/modules/home.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/template.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/templates.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/workView.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/home.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/modernizr.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/underscore.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/home.hbs",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/home",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/jquery.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/templates/home.html",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/handlebars.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/require.js",
 		"/C/Users/vix/Downloads/MyFontsWebfontsKit/MyFontsWebfontsKit/MyFontsWebfontsKit.css",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/modernizr.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/main.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/modules/base.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/base/base - Copy.styl",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.css",
 		"/C/Users/vix/Downloads/MyFontsWebfontsOrderM4455651/MyFontsWebfontsOrderM4455651/MyFontsWebfontsOrderM4455651.js",
 		"/C/Users/vix/Downloads/SRSLY_fonts/SRSLY_fonts/SRSLY_fonts.css",
 		"/C/Users/vix/Dropbox/Web Design/Labs/profitTracker/js/main.js",
@@ -193,9 +279,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -203,6 +290,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"detailView",
+			"id",
+			"etailView",
+			"ciol",
 			"));\n",
 			"webfonts",
 			"black",
@@ -236,7 +327,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -244,15 +335,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 790,
+						"buffer_size": 863,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								758,
-								758
+								824,
+								824
 							]
 						],
 						"settings":
@@ -271,47 +362,47 @@
 					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 162,
+						"buffer_size": 1507,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								79,
-								79
+								582,
+								582
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 307.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "css/css_stylus/modules/home.styl",
+					"file": "js/components/app-view.js",
 					"settings":
 					{
-						"buffer_size": 1601,
+						"buffer_size": 322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1143,
-								1143
+								113,
+								113
 							]
 						],
 						"settings":
 						{
-							"spell_check": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -322,23 +413,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "css/css_stylus/base/base.styl",
+					"file": "js/components/home-view.js",
 					"settings":
 					{
-						"buffer_size": 817,
+						"buffer_size": 357,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								345,
+								345
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -349,18 +440,265 @@
 				},
 				{
 					"buffer": 4,
-					"file": "css/css_stylus/modules/header.styl",
+					"file": "js/components/work-view.js",
 					"settings":
 					{
-						"buffer_size": 563,
+						"buffer_size": 628,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								145,
-								145
+								265,
+								265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/components/detail-view.js",
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								268
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"settings":
+					{
+						"buffer_size": 4313,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										180,
+										190
+									],
+									[
+										340,
+										350
+									],
+									[
+										357,
+										367
+									],
+									[
+										442,
+										452
+									],
+									[
+										471,
+										481
+									],
+									[
+										624,
+										634
+									],
+									[
+										828,
+										838
+									],
+									[
+										957,
+										967
+									],
+									[
+										1579,
+										1589
+									],
+									[
+										1904,
+										1914
+									],
+									[
+										1958,
+										1968
+									],
+									[
+										2303,
+										2313
+									],
+									[
+										2578,
+										2588
+									],
+									[
+										2631,
+										2641
+									],
+									[
+										2679,
+										2689
+									],
+									[
+										2781,
+										2791
+									],
+									[
+										2868,
+										2878
+									],
+									[
+										2930,
+										2940
+									],
+									[
+										2997,
+										3007
+									],
+									[
+										3235,
+										3245
+									],
+									[
+										3409,
+										3419
+									],
+									[
+										3622,
+										3632
+									],
+									[
+										3833,
+										3843
+									],
+									[
+										4065,
+										4075
+									],
+									[
+										4235,
+										4245
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/templates/projectThumbs.html",
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								318,
+								318
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "js/templates/detail.html",
+					"settings":
+					{
+						"buffer_size": 420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "css/css_stylus/modules/work.styl",
+					"settings":
+					{
+						"buffer_size": 649,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
 							]
 						],
 						"settings":
@@ -375,24 +713,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "js/components/views.js",
+					"buffer": 10,
+					"file": "css/css_stylus/modules/detail.styl",
 					"settings":
 					{
-						"buffer_size": 277,
+						"buffer_size": 928,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								277,
-								277
+								711,
+								711
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -401,24 +740,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 11,
 					"file": "js/components/models.js",
 					"settings":
 					{
-						"buffer_size": 134,
+						"buffer_size": 4709,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								106
+								59,
+								59
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -427,19 +767,153 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 12,
+					"file": "js/templates/home.html",
+					"settings":
+					{
+						"buffer_size": 1749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "js/templates/work.html",
+					"settings":
+					{
+						"buffer_size": 325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								306,
+								306
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "css/css_stylus/base/base.styl",
+					"settings":
+					{
+						"buffer_size": 483,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "css/css_stylus/base/mixins.styl",
+					"settings":
+					{
+						"buffer_size": 582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								580,
+								580
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
 					"file": "css/css_stylus/base/layout.styl",
 					"settings":
 					{
-						"buffer_size": 223,
+						"buffer_size": 433,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								223,
-								223
+								95,
+								95
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "css/css_stylus/index.styl",
+					"settings":
+					{
+						"buffer_size": 288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
 							]
 						],
 						"settings":
@@ -453,45 +927,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "css/css_stylus/fonts/fonts.styl",
+					"buffer": 18,
+					"file": "js/templates/templates.js",
 					"settings":
 					{
-						"buffer_size": 4059,
+						"buffer_size": 9137,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3146,
-								3146
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 7.0,
-						"translation.y": 109.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "gruntfile.js",
-					"settings":
-					{
-						"buffer_size": 1089,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								443,
-								443
+								14,
+								14
 							]
 						],
 						"settings":
@@ -507,55 +955,28 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "css/css_stylus/index.styl",
+					"buffer": 19,
+					"file": "css/css_stylus/modules/home.styl",
 					"settings":
 					{
-						"buffer_size": 218,
+						"buffer_size": 2180,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								118,
-								118
+								1329,
+								1336
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "css/index.css",
-					"settings":
-					{
-						"buffer_size": 7067,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2511.0,
+						"translation.y": 449.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -565,7 +986,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"input":
 	{

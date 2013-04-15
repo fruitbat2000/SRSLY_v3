@@ -13,6 +13,24 @@ module.exports = function(grunt) {
       }
     },
 
+    //handlebars config
+    handlebars: {
+      compile: {
+        options: {
+          namespace: 'hbs',
+          amd: true,
+          processName: function(filename) {
+            var pieces = filename.split("/");
+            var filetype = pieces[pieces.length - 1].split('.');
+            return filetype[0];
+          },
+        },
+        files: {
+          "js/templates/templates.js" : ["js/templates/*.html"]
+        }
+      }
+    },
+
     //stylus config 
     stylus: {
       compile: {
@@ -35,18 +53,22 @@ module.exports = function(grunt) {
       scripts: {
         files: ['js/**/*.js'],
         tasks: ['jshint']
+      },
+      templates: {
+        files: ['js/templates/*.html'],
+        tasks: ['handlebars']
       }
-
     }
   });
 
   //load modules
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-handlebars');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   //default task 
-  grunt.registerTask('default', ['jshint', 'stylus']);
+  grunt.registerTask('default', ['jshint', 'handlebars', 'stylus']);
 
   //other tasks 
   grunt.registerTask('styles', 'stylus');

@@ -1,0 +1,13 @@
+<section id="project-thumbs">
+	<a class="column_1 scroll-left" href="">&lsaquo;</a>
+	<div class="slider">
+		<ul class="list">
+		{{#each models}}
+			<li class="column_2" data-id="{{id}}">
+				<img src="{{this.attributes.images.[2]}}" alt="{{this.attributes.title}}">
+			</li>
+		{{/each}}
+		</ul>
+	</div>
+	<a class="column_1 scroll-right" href="">&rsaquo;</a>
+</section>

@@ -1,0 +1,28 @@
+clearfix()
+	float:none;
+	clear:both;
+	overflow:hidden;
+
+font-size-rem($sizeValue)
+	font-size ($sizeValue * 10) px
+	font-size $sizeValue rem
+
+angled-banner()
+	background:-webkit-linear-gradient(arguments);
+	background:-moz-linear-gradient(arguments);
+	background:-o-linear-gradient(arguments);
+	background:linear-gradient(arguments);
+
+perspective(n)
+	perspective: n;
+	-webkit-perspective: n;
+
+rotate-Y(n)
+	transform: rotateY(n);
+	-webkit-transform: rotateY(n);
+	-ms-transform: rotateY(n);
+
+opacity(n)
+	opacity: n;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+

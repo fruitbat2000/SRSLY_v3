@@ -5,7 +5,7 @@
 	float:right;
 
 #intro 
-	margin-bottom:50px;
+	margin:0 30px 50px 0;
 	& h1.inline-title
 		display:inline;
 		line-height:1em;
@@ -15,8 +15,34 @@
 		font-size-rem(2.4);
 
 .main-image 
-	margin-bottom:20px;
+	margin-bottom:50px;
 	min-height:1px;
+	clearfix();
+	& .img1, & .img2, & .img3
+		float:left;
+		width:400px;
+	& img
+		width:390px;
+		box-shadow:5px 5px 5px #999;
+
+.csstransforms3d .main-image
+	clearfix();
+	& .img1, & .img2, & .img3
+		position:relative;
+		perspective(1350);
+		height:338px;
+		float:left;
+	& .img2 img {
+		rotate-Y(-20deg);
+		left:-20px;
+	}
+	& img
+		position:absolute;
+		rotate-Y(20deg);
+		width:415px;
+		top:10px;
+		box-shadow:5px 5px 5px #999;
+
 
 #skills
 	background:#333333;
@@ -24,11 +50,12 @@
 	font-family:"Quan-RoundedBold", Arial, sans-serif;
 	padding:10px 15px 15px 15px;
 	border-radius:7px;
+	margin-right:30px;
 	& h2, h3
 		margin:0;
 
 .feature-nav
-	margin-bottom:50px;
+	margin:0 0 50px 30px;;
 	& li
 		margin-bottom:5px;
 		position:relative;
@@ -71,8 +98,15 @@
 			text-align:center;
 			line-height:68px;
 
+.no-borderradius .feature-nav li span
+	height:80px;
+	width:76px;
+	border:none;
+	border-right:4px solid #f2f1d4;
+
 .twitter
 	text-align:right;
+	margin-left:30px;
 	& h2
 		width:auto;
 		height:25px;

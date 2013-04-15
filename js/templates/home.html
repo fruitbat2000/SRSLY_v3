@@ -1,13 +1,19 @@
 <div class="main-image">
-	<p>{{0.attributes.title}}</p>
-	<p>{{1.attributes.title}}</p>
-	<p>{{1.attributes.skills.[2]}}</p>
+	<div class="img1">
+		<img src="{{0.attributes.images.[0]}}" alt="{{0.attributes.title}}"/>
+	</div>
+	<div class="img2">
+		<img src="{{1.attributes.images.[0]}}" alt="{{1.attributes.title}}"/>
+	</div>
+	<div class="img3">
+		<img src="{{2.attributes.images.[0]}}" alt="{{2.attributes.title}}"/>
+	</div>
 </div>
 <div class="row1">
-	<div class="column_4 col1">
+	<div class="column_6 col1">
 		<section id="intro">
 			<h1 class="inline-title">Hello World!</h1>
-			<p>Welcome to my small corner of the interwebs. I'm a front end web developer who's serious about making great web experiences across all manner of platforms and projects. I've been lucky enough to work for some of the world's biggest brands - you can take a look at my <a href="">WORK</a> here. When I'm not coding, I'm generally... coding, so take a look at some of my 'for fun' projects in the <a href="">LABS</a> section.</p>
+			<p>Welcome to my small corner of the interwebs. I'm a front end web developer who's serious about making great web experiences across all manner of platforms and projects. I've been lucky enough to work for some of the world's biggest brands - you can take a look at my <a href="#work">WORK</a> here. When I'm not coding, I'm generally... coding, so take a look at some of my 'for fun' projects in the <a href="#labs">LABS</a> section.</p>
 		</section>
 		<section id="skills">
 			<h2>mainSkills = [HTML(5), CSS(3), JavaScript, jQuery];</h2>
@@ -15,12 +21,12 @@
 			<h3>otherSkills = [WordPress theme development, web design, branding];</h3>
 		</section>
 	</div>
-	<div class="column_4 col2">
+	<div class="column_6 col2">
 		<nav class="feature-nav">
 			<ul>
-				<li class="first"><span>{}</span><a href="">Work</a></li>
-				<li class="second"><span><></span><a href="">Labs</a></li>
-				<li class="third"><span>:)</span><a href="">About</a></li>
+				<li class="first"><span>{}</span><a href="#work">Work</a></li>
+				<li class="second"><span><></span><a href="#labs">Labs</a></li>
+				<li class="third"><span>:)</span><a href="#about">About</a></li>
 			</ul>
 		</nav>
 		<section class="twitter">

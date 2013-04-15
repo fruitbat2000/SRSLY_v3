@@ -1,22 +1,21 @@
 define([
-	"templates/home",
+	"templates/templates",
 	"components/models",
 	"libs/handlebars",
 	"libs/backbone"
 ], 
 
-function(home, models, Handlebars, Backbone) {
-
+function(templates, models, Handlebars, Backbone) {
+	var data = models.models;
+	
 	var HomeView = Backbone.View.extend({
 		el: '#content',
-		tmpl: Handlebars.templates['home.html'],
+		tmpl: hbs.home,
 		render: function() {
-			this.$el.html(this.tmpl(models))
+			this.$el.html(this.tmpl(data))
 			return this;
 		}
 	});
 
-	var homeView = new HomeView();	
-	homeView.render()
-
+	return HomeView;
 });
