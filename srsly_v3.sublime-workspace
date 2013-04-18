@@ -19,7 +19,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 863,
+				"buffer_size": 917,
 				"line_ending": "Windows"
 			}
 		},
@@ -27,7 +27,23 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 1507,
+				"buffer_size": 1856,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/components/thumbs-view.js",
+			"settings":
+			{
+				"buffer_size": 1688,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/templates/about.html",
+			"settings":
+			{
+				"buffer_size": 1722,
 				"line_ending": "Windows"
 			}
 		},
@@ -35,12 +51,12 @@
 			"file": "js/components/app-view.js",
 			"settings":
 			{
-				"buffer_size": 322,
+				"buffer_size": 425,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/components/home-view.js",
+			"file": "js/components/about-view.js",
 			"settings":
 			{
 				"buffer_size": 357,
@@ -51,7 +67,7 @@
 			"file": "js/components/work-view.js",
 			"settings":
 			{
-				"buffer_size": 628,
+				"buffer_size": 624,
 				"line_ending": "Windows"
 			}
 		},
@@ -59,25 +75,32 @@
 			"file": "js/components/detail-view.js",
 			"settings":
 			{
-				"buffer_size": 695,
+				"buffer_size": 416,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Searching 1875 files for \"detailView\"\n\nC:\\Users\\vix\\Dropbox\\Web Design\\SRSLY_v3\\js\\main.js:\n   24  ],\n   25  \n   26: function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, models) {\n   27  \n   28  	Backbone.View.prototype.close = function(){\n   ..\n   59  		folio: function(id) {\n   60  			var self = this;\n   61: 			var detailView = new DetailView();\n   62  			console.log('folio router');\n   63: 			this.appView.showView(detailView, id);\n   64: 			/*detailView.on('detail view', function(id) {\n   65  				console.log('triggered');\n   66  				self.navigate('folio/'+id);\n   67: 				self.appView.showView(detailView, id);\n   68  			});*/\n   69  		}\n\nC:\\Users\\vix\\Dropbox\\Web Design\\SRSLY_v3\\js\\components\\detail-view.js:\n    8  function(templates, folioCollection, Handlebars, Backbone) {\n    9  \n   10: 	var DetailView = Backbone.View.extend({\n   11  		el: '#content',\n   12  		tmpl: hbs.detail,\n   ..\n   36  	});\n   37  \n   38: 	return DetailView;\n   39  });\n\nC:\\Users\\vix\\Dropbox\\Web Design\\SRSLY_v3\\node_modules\\grunt-contrib-handlebars\\node_modules\\handlebars\\node_modules\\uglify-js\\tmp\\app.js:\n 16024  }).call(this);\n 16025  }, \"main\": function(exports, require, module) {(function() {\n 16026:   var ClientsBillingView, ClientsDashboardView, ClientsForgotPasswordView, ClientsInviteView, ClientsLoginView, ClientsPromotionsView, ClientsRequestsView, ClientsRouter, ClientsSettingsView, ClientsSignUpView, Config, ConfirmEmailView, CountriesCollection, CreditCardView, LocationsCollection, PaymentProfilesCollection, SharedFooterView, SharedMenuView, TripDetailView, TripsCollection;\n 16027    Config = require('lib/config').config;\n 16028    window.i18n = require('web-lib/i18n').i18n;\n .....\n 16069    ClientsSettingsView = require('views/clients/settings').ClientsSettingsView;\n 16070    ClientsRequestsView = require('views/clients/request').ClientsRequestView;\n 16071:   TripDetailView = require('views/clients/trip_detail').TripDetailView;\n 16072    CreditCardView = require('views/clients/modules/credit_card').CreditCardView;\n 16073    $(document).ready(function() {\n .....\n 16106        app.views.clients.promotions = new ClientsPromotionsView();\n 16107        app.views.clients.settings = new ClientsSettingsView();\n 16108:       app.views.clients.tripdetail = new TripDetailView();\n 16109        app.views.clients.billing = new ClientsBillingView();\n 16110        app.views.clients.confirmemail = new ConfirmEmailView();\n .....\n 20256    };\n 20257    clientsTripDetailTemplate = require('templates/clients/trip_detail');\n 20258:   exports.TripDetailView = (function() {\n 20259:     __extends(TripDetailView, UberView);\n 20260:     function TripDetailView() {\n 20261        this.resendReceipt = __bind(this.resendReceipt, this);\n 20262:       TripDetailView.__super__.constructor.apply(this, arguments);\n 20263      }\n 20264:     TripDetailView.prototype.id = 'trip_detail_view';\n 20265:     TripDetailView.prototype.className = 'view_container';\n 20266:     TripDetailView.prototype.events = {\n 20267        'click a#fare_review': 'showFareReview',\n 20268        'click #fare_review_hide': 'hideFareReview',\n .....\n 20271        'click .resendReceipt': 'resendReceipt'\n 20272      };\n 20273:     TripDetailView.prototype.render = function(id) {\n 20274        if (id == null) {\n 20275          id = 'invalid';\n .....\n 20340        return this;\n 20341      };\n 20342:     TripDetailView.prototype.showFareReview = function(e) {\n 20343        e.preventDefault();\n 20344        $('#fare_review_box').slideDown();\n 20345        return $('#fare_review').hide();\n 20346      };\n 20347:     TripDetailView.prototype.hideFareReview = function(e) {\n 20348        e.preventDefault();\n 20349        $('#fare_review_box').slideUp();\n 20350        return $('#fare_review').show();\n 20351      };\n 20352:     TripDetailView.prototype.submitFareReview = function(e) {\n 20353        var attrs, errorMessage, id, options;\n 20354        e.preventDefault();\n .....\n 20374        return this.model.save(attrs, options);\n 20375      };\n 20376:     TripDetailView.prototype.resendReceipt = function(e) {\n 20377        var $e;\n 20378        e.preventDefault();\n .....\n 20403        });\n 20404      };\n 20405:     return TripDetailView;\n 20406    })();\n 20407  }).call(this);\n\n25 matches across 3 files\n",
+			"file": "css/css_stylus/modules/about.styl",
 			"settings":
 			{
-				"buffer_size": 4313,
+				"buffer_size": 817,
 				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
+				"name": ".about"
 			}
 		},
 		{
-			"file": "js/templates/projectThumbs.html",
+			"file": "css/css_stylus/fonts/fonts.styl",
 			"settings":
 			{
-				"buffer_size": 355,
+				"buffer_size": 4059,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/css_stylus/index.styl",
+			"settings":
+			{
+				"buffer_size": 312,
 				"line_ending": "Windows"
 			}
 		},
@@ -101,7 +124,7 @@
 			"file": "css/css_stylus/modules/detail.styl",
 			"settings":
 			{
-				"buffer_size": 928,
+				"buffer_size": 1085,
 				"line_ending": "Windows"
 			}
 		},
@@ -109,7 +132,7 @@
 			"file": "js/components/models.js",
 			"settings":
 			{
-				"buffer_size": 4709,
+				"buffer_size": 4711,
 				"line_ending": "Windows"
 			}
 		},
@@ -125,7 +148,7 @@
 			"file": "js/templates/work.html",
 			"settings":
 			{
-				"buffer_size": 325,
+				"buffer_size": 348,
 				"line_ending": "Windows"
 			}
 		},
@@ -154,18 +177,10 @@
 			}
 		},
 		{
-			"file": "css/css_stylus/index.styl",
-			"settings":
-			{
-				"buffer_size": 288,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "js/templates/templates.js",
 			"settings":
 			{
-				"buffer_size": 9137,
+				"buffer_size": 11189,
 				"line_ending": "Unix"
 			}
 		},
@@ -210,6 +225,9 @@
 	},
 	"file_history":
 	[
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/projectThumbs.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/thumbs-views.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/views.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/app-view.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/gruntfile.js",
@@ -248,7 +266,6 @@
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/base.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/header.styl",
 		"/C/Users/vix/Dropbox/Web Design/Labs/profitTracker/index.html",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/inedx.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl.css",
 		"/C/Users/vix/Dropbox/Web Design/CHRC/chalfont_heights/archive.php",
@@ -279,7 +296,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -290,6 +307,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"append",
 			"detailView",
 			"id",
 			"etailView",
@@ -327,7 +345,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -335,15 +353,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 863,
+						"buffer_size": 917,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								824,
-								824
+								686,
+								686
 							]
 						],
 						"settings":
@@ -362,15 +380,15 @@
 					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 1507,
+						"buffer_size": 1856,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								582,
-								582
+								1173,
+								1173
 							]
 						],
 						"settings":
@@ -379,25 +397,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 307.0,
+						"translation.y": 252.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "js/components/app-view.js",
+					"file": "js/components/thumbs-view.js",
 					"settings":
 					{
-						"buffer_size": 322,
+						"buffer_size": 1688,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								113,
-								113
+								1488,
+								1488
 							]
 						],
 						"settings":
@@ -406,31 +424,30 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 121.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "js/components/home-view.js",
+					"file": "js/templates/about.html",
 					"settings":
 					{
-						"buffer_size": 357,
+						"buffer_size": 1722,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								345,
-								345
+								73,
+								73
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -440,18 +457,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "js/components/work-view.js",
+					"file": "js/components/app-view.js",
 					"settings":
 					{
-						"buffer_size": 628,
+						"buffer_size": 425,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								265,
-								265
+								269,
+								269
 							]
 						],
 						"settings":
@@ -467,18 +484,18 @@
 				},
 				{
 					"buffer": 5,
-					"file": "js/components/detail-view.js",
+					"file": "js/components/about-view.js",
 					"settings":
 					{
-						"buffer_size": 695,
+						"buffer_size": 357,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								268,
-								268
+								348,
+								348
 							]
 						],
 						"settings":
@@ -494,136 +511,24 @@
 				},
 				{
 					"buffer": 6,
+					"file": "js/components/work-view.js",
 					"settings":
 					{
-						"buffer_size": 4313,
+						"buffer_size": 624,
 						"regions":
 						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										180,
-										190
-									],
-									[
-										340,
-										350
-									],
-									[
-										357,
-										367
-									],
-									[
-										442,
-										452
-									],
-									[
-										471,
-										481
-									],
-									[
-										624,
-										634
-									],
-									[
-										828,
-										838
-									],
-									[
-										957,
-										967
-									],
-									[
-										1579,
-										1589
-									],
-									[
-										1904,
-										1914
-									],
-									[
-										1958,
-										1968
-									],
-									[
-										2303,
-										2313
-									],
-									[
-										2578,
-										2588
-									],
-									[
-										2631,
-										2641
-									],
-									[
-										2679,
-										2689
-									],
-									[
-										2781,
-										2791
-									],
-									[
-										2868,
-										2878
-									],
-									[
-										2930,
-										2940
-									],
-									[
-										2997,
-										3007
-									],
-									[
-										3235,
-										3245
-									],
-									[
-										3409,
-										3419
-									],
-									[
-										3622,
-										3632
-									],
-									[
-										3833,
-										3843
-									],
-									[
-										4065,
-										4075
-									],
-									[
-										4235,
-										4245
-									]
-								],
-								"scope": ""
-							}
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								575,
+								575
 							]
 						],
 						"settings":
 						{
-							"detect_indentation": false,
-							"output_tag": 1,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -633,23 +538,23 @@
 				},
 				{
 					"buffer": 7,
-					"file": "js/templates/projectThumbs.html",
+					"file": "js/components/detail-view.js",
 					"settings":
 					{
-						"buffer_size": 355,
+						"buffer_size": 416,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								318,
-								318
+								219,
+								219
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -660,6 +565,85 @@
 				},
 				{
 					"buffer": 8,
+					"file": "css/css_stylus/modules/about.styl",
+					"settings":
+					{
+						"buffer_size": 817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"auto_name": ".about",
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "css/css_stylus/fonts/fonts.styl",
+					"settings":
+					{
+						"buffer_size": 4059,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3786,
+								3802
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 194.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "css/css_stylus/index.styl",
+					"settings":
+					{
+						"buffer_size": 312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
 					"file": "js/templates/detail.html",
 					"settings":
 					{
@@ -686,7 +670,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 12,
 					"file": "css/css_stylus/modules/work.styl",
 					"settings":
 					{
@@ -713,19 +697,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 13,
 					"file": "css/css_stylus/modules/detail.styl",
 					"settings":
 					{
-						"buffer_size": 928,
+						"buffer_size": 1085,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								711,
-								711
+								0,
+								0
 							]
 						],
 						"settings":
@@ -740,19 +724,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 14,
 					"file": "js/components/models.js",
 					"settings":
 					{
-						"buffer_size": 4709,
+						"buffer_size": 4711,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								59,
-								59
+								0,
+								0
 							]
 						],
 						"settings":
@@ -767,7 +751,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 15,
 					"file": "js/templates/home.html",
 					"settings":
 					{
@@ -794,19 +778,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 16,
 					"file": "js/templates/work.html",
 					"settings":
 					{
-						"buffer_size": 325,
+						"buffer_size": 348,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								306,
-								306
+								0,
+								0
 							]
 						],
 						"settings":
@@ -820,7 +804,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 17,
 					"file": "css/css_stylus/base/base.styl",
 					"settings":
 					{
@@ -847,7 +831,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 18,
 					"file": "css/css_stylus/base/mixins.styl",
 					"settings":
 					{
@@ -874,7 +858,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 19,
 					"file": "css/css_stylus/base/layout.styl",
 					"settings":
 					{
@@ -901,37 +885,11 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "css/css_stylus/index.styl",
-					"settings":
-					{
-						"buffer_size": 288,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								286,
-								286
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
+					"buffer": 20,
 					"file": "js/templates/templates.js",
 					"settings":
 					{
-						"buffer_size": 9137,
+						"buffer_size": 11189,
 						"regions":
 						{
 						},
@@ -955,7 +913,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 21,
 					"file": "css/css_stylus/modules/home.styl",
 					"settings":
 					{
@@ -966,8 +924,8 @@
 						"selection":
 						[
 							[
-								1329,
-								1336
+								707,
+								714
 							]
 						],
 						"settings":

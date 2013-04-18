@@ -20,10 +20,12 @@ require([
 	"components/home-view",
 	"components/work-view",
 	"components/detail-view",
+	"components/thumbs-view",
+	"components/about-view",
 	"components/models"
 ],
 
-function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, models) {
+function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, ThumbsView, AboutView, models) {
 
 	Backbone.View.prototype.close = function(){
 		this.remove();
@@ -34,7 +36,8 @@ function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, model
 		routes: {
 			'home' : 'home',
 			'work' : 'work',
-			'folio/:id' : 'folio'
+			'folio/:id' : 'folio',
+			'about' : 'about'
 		},
 
 		initialize: function(){
@@ -52,7 +55,7 @@ function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, model
 			var self = this;
 			var workView = new WorkView();
 			this.appView.showView(workView);
-			workView.on('detail view', function(id) {
+			workView.on('detailView', function(id) {
 			 	self.navigate('folio/'+id, {trigger: true});
 			});
 		},
@@ -60,11 +63,20 @@ function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, model
 		folio: function(id) {
 			var self = this;
 			var detailView = new DetailView();
+			var thumbsView = new ThumbsView();
+			
 			this.appView.showView(detailView, id);
-			detailView.on('detail view', function(id) {
+			thumbsView.render(id);
+			thumbsView.on('detailView', function(id) {
+				console.log('triggered');
 				self.navigate('folio/'+id);
 				self.appView.showView(detailView, id);
 			});
+		},
+
+		about: function() {
+			var aboutView = new AboutView();
+			this.appView.showView(aboutView);
 		}
 
 	});

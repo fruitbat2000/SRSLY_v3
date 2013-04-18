@@ -8,14 +8,14 @@ define([
 function(templates, models, Handlebars, Backbone) {
 	var data = models.models;
 	
-	var HomeView = Backbone.View.extend({
+	var AboutView = Backbone.View.extend({
 		el: '#main',
-		tmpl: hbs.home,
+		tmpl: hbs.about,
 		render: function() {
 			this.$el.html(this.tmpl(data))
 			return this;
 		}
 	});
 
-	return HomeView;
+	return AboutView;
 });

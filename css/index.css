@@ -596,3 +596,55 @@ header nav li a {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
+.about section.about-me {
+  margin-right: 30px;
+  border: 1px dashed #333;
+  border-radius: 7px;
+  padding: 15px;
+}
+.about section.contact {
+  margin-left: 30px;
+  margin-top: 80px;
+  background: #333;
+  border-radius: 7px;
+  color: #f2f1d4;
+  padding: 20px;
+}
+.about section.contact h2 {
+  font-family: 'Museo 300', Arial, sans-serif;
+}
+.about section.contact a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin-left: 30px;
+  color: #f2f1d4;
+}
+.about section.contact a:hover {
+  text-decoration: underline;
+}
+.about section.contact a.mailto {
+  font-family: 'Quan-RoundedBoldOblique', Arial, sans-serif;
+  font-size: 48px;
+  font-size: 4.8rem;
+  color: #f28b39;
+}
+.about section.contact a img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.about p {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+.about p.intro {
+  margin-bottom: 20px;
+}
+.about p strong {
+  font-family: 'Quan-RoundedBold', Arial sans-serif;
+  margin-right: 10px;
+}

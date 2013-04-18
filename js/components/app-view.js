@@ -6,7 +6,6 @@ function(Backbone) {
 
 	function AppView() {
 		this.showView = function(view, id) {
-			
 			if(this.currentView) {
 				this.currentView.close();
 			}
@@ -14,7 +13,11 @@ function(Backbone) {
 			this.currentView = view;
 			this.currentView.render(id);
 
-			$('#main-content').html(this.currentView.el);
+			if(this.currentView.id === 'detailView') {
+				$('#content').prepend(this.currentView.el);
+			} else {
+				$('#content').html(this.currentView.el);
+			}
 		}
 	}
 

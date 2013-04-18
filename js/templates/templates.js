@@ -2,6 +2,15 @@ define(['libs/handlebars'], function(Handlebars) {
 
 this["hbs"] = this["hbs"] || {};
 
+this["hbs"]["about"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [2,'>= 1.0.0-rc.3'];
+helpers = helpers || Handlebars.helpers; data = data || {};
+  
+
+
+  return "<div class=\"row1 about\">\r\n	<div class=\"column_6 col1\">\r\n		<h1>About me</h1>\r\n		<section class=\"about-me\">\r\n			<p class=\"intro\">I'm Vicki Keeley, a front end web developer from London. I hate writing 'About Me' pages so here are some key facts instead:</p>\r\n			<p><strong>Born:</strong>1980, Bristol</p>\r\n			<p><strong>Lives:</strong>Plaistow, London</p>\r\n			<p><strong>Pets:</strong>Random the cat</p>\r\n			<p><strong>In my spare time I...</strong>experiment with new code stuff, play computer games, read books, listen to music, climb fake rocks indoors.</p>\r\n			<p><strong>If you're making a brew I'll have...</strong>Redbush tea, milk, no sugar.</p>\r\n			<p><strong>When I was growing up I wanted to be...</strong>A wizard or a hero. Or a heroic wizard.</p>\r\n			<p><strong>Fave games:</strong>Anything where I get to be a hero/wizard (see previous comment). Currently I'm quite addicted to Guild Wars 2.</p>\r\n			<p><strong>Fave authors:</strong>Jeanette Winterson, Murakami, David Mitchell, Bronte, Jasper Fforde, Ali Smith and loads more. Love books &lsaquo;3.</p>\r\n			<p><strong>Fave music:</strong>Anything from Chase &amp; Status to Joan Jett &amp; The Blackhearts to Suzanne Vega to Mussorgsky. Love music &lsaquo;3.</p>\r\n		</section>\r\n	</div>\r\n	<div class=\"column_6 col2\">\r\n		<section class=\"contact\">\r\n			<h2>Find me on the interwebs...</h2>\r\n			<a href=\"http://uk.linkedin.com/in/vickikeeley/\" target=\"_blank\" class=\"social\"><img src=\"images/linkedin.png\" alt=\"LinkedIn\">LinkedIn</a>\r\n			<a href=\"\" target=\"_blank\" class=\"social\"><img src=\"images/twitter.png\" alt=\"Twitter\">Twitter</a>\r\n			<h2>Get in touch...</h2>\r\n			<a href=\"mailto:hello@srsly.me.uk\" target=\"_blank\" class=\"mailto\">hello@srsly.me.uk</a>\r\n		</section>\r\n	</div>\r\n</div>\r\n";
+  });
+
 this["hbs"]["detail"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [2,'>= 1.0.0-rc.3'];
 helpers = helpers || Handlebars.helpers; data = data || {};
@@ -52,23 +61,23 @@ helpers = helpers || Handlebars.helpers; data = data || {};
 
 function program1(depth0,data) {
   
-  var buffer = "", stack1;
-  buffer += "\r\n			<li class=\"column_2\" data-id=\"";
-  if (stack1 = helpers.id) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.id; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "\">\r\n				<img src=\""
+  var buffer = "", stack1, stack2;
+  buffer += "\r\n		<li class=\"column_2\">\r\n			<img src=\""
     + escapeExpression(((stack1 = ((stack1 = ((stack1 = depth0.attributes),stack1 == null || stack1 === false ? stack1 : stack1.images)),stack1 == null || stack1 === false ? stack1 : stack1[2])),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
     + "\" alt=\""
     + escapeExpression(((stack1 = ((stack1 = depth0.attributes),stack1 == null || stack1 === false ? stack1 : stack1.title)),typeof stack1 === functionType ? stack1.apply(depth0) : stack1))
-    + "\">\r\n			</li>\r\n		";
+    + "\" data-id=\"";
+  if (stack2 = helpers.id) { stack2 = stack2.call(depth0, {hash:{},data:data}); }
+  else { stack2 = depth0.id; stack2 = typeof stack2 === functionType ? stack2.apply(depth0) : stack2; }
+  buffer += escapeExpression(stack2)
+    + "\">\r\n		</li>\r\n	";
   return buffer;
   }
 
-  buffer += "<section id=\"project-thumbs\">\r\n	<a class=\"column_1 scroll-left\" href=\"\">&lsaquo;</a>\r\n	<div class=\"slider\">\r\n		<ul class=\"list\">\r\n		";
+  buffer += "<a class=\"column_1 scroll-left\" href=\"\">&lsaquo;</a>\r\n<div class=\"slider\">\r\n	<ul class=\"list\">\r\n	";
   stack1 = helpers.each.call(depth0, depth0.models, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
   if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\r\n		</ul>\r\n	</div>\r\n	<a class=\"column_1 scroll-right\" href=\"\">&rsaquo;</a>\r\n</section>";
+  buffer += "\r\n	</ul>\r\n</div>\r\n<a class=\"column_1 scroll-right\" href=\"\">&rsaquo;</a>\r\n";
   return buffer;
   });
 

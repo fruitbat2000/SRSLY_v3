@@ -9,7 +9,7 @@ function(templates, folioCollection, Handlebars, Backbone) {
 
 	var WorkView = Backbone.View.extend({
 
-		el: '#content',
+		el: '#main',
 		tmpl: hbs.work,
 		collection: folioCollection,
 
@@ -24,7 +24,7 @@ function(templates, folioCollection, Handlebars, Backbone) {
 			//render detail view when clicking folio item
 			this.$el.on('click', 'li', function(e) {
 				var id = $(this).data('id');
-				self.trigger('detail view', id);
+				self.trigger('detailView', id);
 			});
 		}
 	});
