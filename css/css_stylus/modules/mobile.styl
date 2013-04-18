@@ -1,0 +1,201 @@
+@media only screen and (max-width: 767px) 
+	header
+		.logo a:hover
+			color:#333;
+		nav
+			position:relative;
+			text-align:left;
+			clearfix();
+			li a
+				font-size-rem(3.8);
+	.main-image
+		margin-bottom:30px;
+	.img1, .img2
+		display:none;
+	.img3
+		width:300px;
+	.img3 img
+		width:300px;
+	.csstransforms3d .main-image .img3
+		perspective(0);
+		height:auto;
+		float:none;
+	.csstransforms3d .main-image .img3 img
+		rotate-Y(0);
+		position:relative;
+		width:290px;
+		top:0;
+	#intro
+		margin:0 0 30px 0;
+	#skills
+		margin:0 0 30px 0;
+	nav.feature-nav
+		margin:0 0 30px 0;
+		a
+			width:76%;
+			float:none;
+			text-align:left;
+			padding:0 0 0 20px;
+		li span
+			left:74%;
+	.twitter
+		text-align:left;
+		margin:0 0 30px 0;
+		h2
+			padding-left:10px;
+			angled-banner 135deg, #333333 150px, transparent 1px;
+	.folio-list
+		.column_4
+			width: 300px;
+		li
+			padding:25px 0;
+			border-bottom:dashed 1px #333;
+			&:hover
+				background:none;
+				img
+					box-shadow:5px 5px 5px #999
+			&:nth-child(3n-1)
+				border-left:none;
+				border-right:none;
+			&:nth-last-child(-n+3)
+				border-bottom:dashed 1px #333;
+			&:last-child 
+				border-bottom:none;
+			img
+				width:280px;
+				margin:0 auto;
+	#client-list
+		margin:30px 0;
+	.detail-view
+		h1
+			font-size-rem(4.2);
+		.col1
+			margin-bottom:30px;
+			img 
+				width:290px;
+		.col2
+			.project-details
+				width:100%;
+	#project-thumbs
+		margin-bottom:50px;
+		.scroll-left, .scroll-right
+			font-size-rem(16);
+			&:active
+				color:#333;
+		.slider
+			left:50px;
+			width:200px;
+		ul li
+			border:none;
+	.about
+		section.about-me
+			margin: 0 0 30px 0;
+		section.contact
+			margin:0 0 50px 0;
+			a.mailto
+				font-size-rem(3.4);
+
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+	.logo a:hover
+		color:#333;
+	.csstransforms3d .main-image img 
+		width:360px;
+	.csstransforms3d .main-image .img1, .csstransforms3d .main-image .img2
+		width:350px;
+		height:299px;
+	.main-image
+		margin-bottom:30px;
+		.img3
+			display:none;
+	.feature-nav li a
+		width:77%;
+	.row1
+		margin-bottom:30px;
+	#intro
+		margin-bottom:30px;
+	.twitter h2
+		angled-banner 45deg, transparent 150px, #333333 1px;
+	.folio-list
+		.column_4
+			width:349px;
+		li
+			&:nth-child(3n-1)
+				border-left:none;
+				border-right:none;
+			&:nth-last-child(-n+3)
+				border-bottom:dashed 1px #333;
+			&:nth-child(odd)
+				border-right:1px dashed #333;
+			&:nth-last-child(-n+2)
+				border-bottom:none;
+	#client-list
+		margin:30px 0;
+	.detail-view
+		position:relative;
+		h1
+			font-size-rem(4.2);
+		.col1
+			margin-bottom:30px;
+			img 
+				width:350px;
+		.col2
+			.project-details
+				width:90%;
+			#skills
+				position:absolute;
+				top:300px;
+				left:0;
+				width:330px;
+	#project-thumbs
+		margin-bottom:50px;
+		.scroll-left, .scroll-right
+			font-size-rem(16);
+			&:active
+				color:#333;
+		.slider
+			left:50px;
+			width:600px;
+	.about
+		section.contact
+			a.mailto
+				font-size-rem(3.4);
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px)
+	.logo a:hover
+		color:#333;
+	.csstransforms3d .main-image img 
+		width:343px;
+	.csstransforms3d .main-image .img1, .csstransforms3d .main-image .img2, .csstransforms3d .main-image .img3
+		width:330px;
+		height:299px;
+	.csstransforms3d .main-image .img2 img
+		left:-15px;
+	.main-image
+		margin-bottom:30px;
+	.feature-nav li a
+		width:84%;
+	.row1
+		margin-bottom:30px;
+	#intro
+		margin-bottom:30px;
+	.twitter h2
+		angled-banner 45deg, transparent 150px, #333333 1px;
+	.folio-list
+		.column_4
+			width:332px;
+	#client-list
+		margin:50px 0;
+	.detail-view
+		h1
+			font-size-rem(4.2);
+		.col1
+			margin-bottom:30px;
+			img 
+				width:500px;
+		.col2
+			.project-details
+				width:90%;
+	#project-thumbs
+		margin-bottom:50px;
+		.slider
+			width:800px;

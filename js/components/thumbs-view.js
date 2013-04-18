@@ -41,13 +41,13 @@ function(templates, folioCollection, Handlebars, Backbone) {
 			this.$scrollLeft.click(function(e) {
 				e.preventDefault();
 				self.$scrollable.animate({
-					scrollLeft: self.$scrollable[0].scrollLeft+220
+					scrollLeft: self.$scrollable[0].scrollLeft+200
 				}, 200, function(){return false});
 			});
 			this.$scrollRight.click(function(e) {
 				e.preventDefault();
 				self.$scrollable.animate({
-					scrollLeft: self.$scrollable[0].scrollLeft-220
+					scrollLeft: self.$scrollable[0].scrollLeft-200
 				}, 200, function(){return false});
 			});
 		},
@@ -57,6 +57,7 @@ function(templates, folioCollection, Handlebars, Backbone) {
 			this.trigger('detailView', id);
 			this.$thumbnails.fadeTo(0,0.5);
 			$(ev.target).fadeTo(0,1);
+			$('html, body').animate({scrollTop:0}, 400);
 			return false;
 		},
 

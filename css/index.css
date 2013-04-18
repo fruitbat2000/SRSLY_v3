@@ -222,6 +222,97 @@ a:hover {
   clear: both;
   overflow: hidden;
 }
+@media only screen and (max-width: 767px) {
+  #wrapper {
+    width: 300px;
+  }
+  .column_12,
+  .column_11,
+  .column_10,
+  .column_9,
+  .column_8,
+  .column_7,
+  .column_6,
+  .column_5,
+  .column_4 {
+    width: 300px;
+  }
+  .column_1 {
+    width: 50px;
+  }
+  .column_2,
+  .column_3 {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #wrapper {
+    width: 700px;
+  }
+  .column_10,
+  .column_12,
+  .column_11 {
+    width: 700px;
+  }
+  .column_7,
+  .column_8,
+  .column_9 {
+    width: 525px;
+  }
+  .column_4,
+  .column_5,
+  .column_6 {
+    width: 350px;
+  }
+  .column_2,
+  .column_3 {
+    width: 200px;
+  }
+  .column_1 {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  #wrapper {
+    width: 1000px;
+  }
+  .column_12 {
+    width: 1000px;
+  }
+  .column_11 {
+    width: 900px;
+  }
+  .column_10 {
+    width: 800px;
+  }
+  .column_9 {
+    width: 750px;
+  }
+  .column_8 {
+    width: 666px;
+  }
+  .column_7 {
+    width: 600;
+  }
+  .column_6 {
+    width: 500px;
+  }
+  .column_5 {
+    width: 400px;
+  }
+  .column_4 {
+    width: 333px;
+  }
+  .column_3 {
+    width: 250px;
+  }
+  .column_2 {
+    width: 200px;
+  }
+  .column_1 {
+    width: 100px;
+  }
+}
 @import url("//hello.myfonts.net/count/266daa");
 @font-face {
   font-family: 'Museo-700';
@@ -460,7 +551,7 @@ header nav li a {
   background: -o-linear-gradient(45deg, transparent 250px, #333 1px);
   background: linear-gradient(45deg, transparent 250px, #333 1px);
   color: #f2f1d4;
-  padding-right: 10px;
+  padding: 3px 10px 0 0;
   font-size: 22px;
   font-size: 2.2rem;
   line-height: 1em;
@@ -580,6 +671,7 @@ header nav li a {
   *display: inline;
   zoom: 1;
   border-right: dashed 1px #333;
+  margin-right: -4px;
 }
 #project-thumbs ul li:last-child {
   border-right: none;
@@ -647,4 +739,303 @@ header nav li a {
 .about p strong {
   font-family: 'Quan-RoundedBold', Arial sans-serif;
   margin-right: 10px;
+}
+@media only screen and (max-width: 767px) {
+  header .logo a:hover {
+    color: #333;
+  }
+  header nav {
+    position: relative;
+    text-align: left;
+    float: none;
+    clear: both;
+    overflow: hidden;
+  }
+  header nav li a {
+    font-size: 38px;
+    font-size: 3.8rem;
+  }
+  .main-image {
+    margin-bottom: 30px;
+  }
+  .img1,
+  .img2 {
+    display: none;
+  }
+  .img3 {
+    width: 300px;
+  }
+  .img3 img {
+    width: 300px;
+  }
+  .csstransforms3d .main-image .img3 {
+    perspective: 0;
+    -webkit-perspective: 0;
+    height: auto;
+    float: none;
+  }
+  .csstransforms3d .main-image .img3 img {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    position: relative;
+    width: 290px;
+    top: 0;
+  }
+  #intro {
+    margin: 0 0 30px 0;
+  }
+  #skills {
+    margin: 0 0 30px 0;
+  }
+  nav.feature-nav {
+    margin: 0 0 30px 0;
+  }
+  nav.feature-nav a {
+    width: 76%;
+    float: none;
+    text-align: left;
+    padding: 0 0 0 20px;
+  }
+  nav.feature-nav li span {
+    left: 74%;
+  }
+  .twitter {
+    text-align: left;
+    margin: 0 0 30px 0;
+  }
+  .twitter h2 {
+    padding-left: 10px;
+    background: -webkit-linear-gradient(135deg, #333 150px, transparent 1px);
+    background: -moz-linear-gradient(135deg, #333 150px, transparent 1px);
+    background: -o-linear-gradient(135deg, #333 150px, transparent 1px);
+    background: linear-gradient(135deg, #333 150px, transparent 1px);
+  }
+  .folio-list .column_4 {
+    width: 300px;
+  }
+  .folio-list li {
+    padding: 25px 0;
+    border-bottom: dashed 1px #333;
+  }
+  .folio-list li:hover {
+    background: none;
+  }
+  .folio-list li:hover img {
+    box-shadow: 5px 5px 5px #999;
+  }
+  .folio-list li:nth-child(3n-1) {
+    border-left: none;
+    border-right: none;
+  }
+  .folio-list li:nth-last-child(-n+3) {
+    border-bottom: dashed 1px #333;
+  }
+  .folio-list li:last-child {
+    border-bottom: none;
+  }
+  .folio-list li img {
+    width: 280px;
+    margin: 0 auto;
+  }
+  #client-list {
+    margin: 30px 0;
+  }
+  .detail-view h1 {
+    font-size: 42px;
+    font-size: 4.2rem;
+  }
+  .detail-view .col1 {
+    margin-bottom: 30px;
+  }
+  .detail-view .col1 img {
+    width: 290px;
+  }
+  .detail-view .col2 .project-details {
+    width: 100%;
+  }
+  #project-thumbs {
+    margin-bottom: 50px;
+  }
+  #project-thumbs .scroll-left,
+  #project-thumbs .scroll-right {
+    font-size: 160px;
+    font-size: 16rem;
+  }
+  #project-thumbs .scroll-left:active,
+  #project-thumbs .scroll-right:active {
+    color: #333;
+  }
+  #project-thumbs .slider {
+    left: 50px;
+    width: 200px;
+  }
+  #project-thumbs ul li {
+    border: none;
+  }
+  .about section.about-me {
+    margin: 0 0 30px 0;
+  }
+  .about section.contact {
+    margin: 0 0 50px 0;
+  }
+  .about section.contact a.mailto {
+    font-size: 34px;
+    font-size: 3.4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo a:hover {
+    color: #333;
+  }
+  .csstransforms3d .main-image img {
+    width: 360px;
+  }
+  .csstransforms3d .main-image .img1,
+  .csstransforms3d .main-image .img2 {
+    width: 350px;
+    height: 299px;
+  }
+  .main-image {
+    margin-bottom: 30px;
+  }
+  .main-image .img3 {
+    display: none;
+  }
+  .feature-nav li a {
+    width: 77%;
+  }
+  .row1 {
+    margin-bottom: 30px;
+  }
+  #intro {
+    margin-bottom: 30px;
+  }
+  .twitter h2 {
+    background: -webkit-linear-gradient(45deg, transparent 150px, #333 1px);
+    background: -moz-linear-gradient(45deg, transparent 150px, #333 1px);
+    background: -o-linear-gradient(45deg, transparent 150px, #333 1px);
+    background: linear-gradient(45deg, transparent 150px, #333 1px);
+  }
+  .folio-list .column_4 {
+    width: 349px;
+  }
+  .folio-list li:nth-child(3n-1) {
+    border-left: none;
+    border-right: none;
+  }
+  .folio-list li:nth-last-child(-n+3) {
+    border-bottom: dashed 1px #333;
+  }
+  .folio-list li:nth-child(odd) {
+    border-right: 1px dashed #333;
+  }
+  .folio-list li:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+  #client-list {
+    margin: 30px 0;
+  }
+  .detail-view {
+    position: relative;
+  }
+  .detail-view h1 {
+    font-size: 42px;
+    font-size: 4.2rem;
+  }
+  .detail-view .col1 {
+    margin-bottom: 30px;
+  }
+  .detail-view .col1 img {
+    width: 350px;
+  }
+  .detail-view .col2 .project-details {
+    width: 90%;
+  }
+  .detail-view .col2 #skills {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 330px;
+  }
+  #project-thumbs {
+    margin-bottom: 50px;
+  }
+  #project-thumbs .scroll-left,
+  #project-thumbs .scroll-right {
+    font-size: 160px;
+    font-size: 16rem;
+  }
+  #project-thumbs .scroll-left:active,
+  #project-thumbs .scroll-right:active {
+    color: #333;
+  }
+  #project-thumbs .slider {
+    left: 50px;
+    width: 600px;
+  }
+  .about section.contact a.mailto {
+    font-size: 34px;
+    font-size: 3.4rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .logo a:hover {
+    color: #333;
+  }
+  .csstransforms3d .main-image img {
+    width: 343px;
+  }
+  .csstransforms3d .main-image .img1,
+  .csstransforms3d .main-image .img2,
+  .csstransforms3d .main-image .img3 {
+    width: 330px;
+    height: 299px;
+  }
+  .csstransforms3d .main-image .img2 img {
+    left: -15px;
+  }
+  .main-image {
+    margin-bottom: 30px;
+  }
+  .feature-nav li a {
+    width: 84%;
+  }
+  .row1 {
+    margin-bottom: 30px;
+  }
+  #intro {
+    margin-bottom: 30px;
+  }
+  .twitter h2 {
+    background: -webkit-linear-gradient(45deg, transparent 150px, #333 1px);
+    background: -moz-linear-gradient(45deg, transparent 150px, #333 1px);
+    background: -o-linear-gradient(45deg, transparent 150px, #333 1px);
+    background: linear-gradient(45deg, transparent 150px, #333 1px);
+  }
+  .folio-list .column_4 {
+    width: 332px;
+  }
+  #client-list {
+    margin: 50px 0;
+  }
+  .detail-view h1 {
+    font-size: 42px;
+    font-size: 4.2rem;
+  }
+  .detail-view .col1 {
+    margin-bottom: 30px;
+  }
+  .detail-view .col1 img {
+    width: 500px;
+  }
+  .detail-view .col2 .project-details {
+    width: 90%;
+  }
+  #project-thumbs {
+    margin-bottom: 50px;
+  }
+  #project-thumbs .slider {
+    width: 800px;
+  }
 }

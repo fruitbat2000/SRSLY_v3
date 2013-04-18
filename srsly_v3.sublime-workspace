@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"mai",
+				"main-image"
+			],
+			[
 				"init",
 				"initEvents"
 			],
@@ -27,7 +31,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 1856,
+				"buffer_size": 1854,
 				"line_ending": "Windows"
 			}
 		},
@@ -35,15 +39,7 @@
 			"file": "js/components/thumbs-view.js",
 			"settings":
 			{
-				"buffer_size": 1688,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/templates/about.html",
-			"settings":
-			{
-				"buffer_size": 1722,
+				"buffer_size": 1736,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,7 +63,7 @@
 			"file": "js/components/work-view.js",
 			"settings":
 			{
-				"buffer_size": 624,
+				"buffer_size": 673,
 				"line_ending": "Windows"
 			}
 		},
@@ -76,39 +72,6 @@
 			"settings":
 			{
 				"buffer_size": 416,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/css_stylus/modules/about.styl",
-			"settings":
-			{
-				"buffer_size": 817,
-				"line_ending": "Windows",
-				"name": ".about"
-			}
-		},
-		{
-			"file": "css/css_stylus/fonts/fonts.styl",
-			"settings":
-			{
-				"buffer_size": 4059,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/css_stylus/index.styl",
-			"settings":
-			{
-				"buffer_size": 312,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/templates/detail.html",
-			"settings":
-			{
-				"buffer_size": 420,
 				"line_ending": "Windows"
 			}
 		},
@@ -124,7 +87,7 @@
 			"file": "css/css_stylus/modules/detail.styl",
 			"settings":
 			{
-				"buffer_size": 1085,
+				"buffer_size": 1107,
 				"line_ending": "Windows"
 			}
 		},
@@ -133,22 +96,6 @@
 			"settings":
 			{
 				"buffer_size": 4711,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/templates/home.html",
-			"settings":
-			{
-				"buffer_size": 1749,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/templates/work.html",
-			"settings":
-			{
-				"buffer_size": 348,
 				"line_ending": "Windows"
 			}
 		},
@@ -172,7 +119,15 @@
 			"file": "css/css_stylus/base/layout.styl",
 			"settings":
 			{
-				"buffer_size": 433,
+				"buffer_size": 1387,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/modules/mobile.styl",
+			"settings":
+			{
+				"buffer_size": 3718,
 				"line_ending": "Windows"
 			}
 		},
@@ -188,7 +143,7 @@
 			"file": "css/css_stylus/modules/home.styl",
 			"settings":
 			{
-				"buffer_size": 2180,
+				"buffer_size": 2182,
 				"line_ending": "Windows"
 			}
 		}
@@ -225,14 +180,19 @@
 	},
 	"file_history":
 	[
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/projectThumbs.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.css",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/work.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/home.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/detail.html",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/fonts/fonts.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/modules/about.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/about.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/projectThumbs.html",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/thumbs-views.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/views.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/app-view.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/gruntfile.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.css",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/fonts/fonts.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/listPartial.html",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/node_modules/grunt/AUTHORS",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/list-partial.html",
@@ -345,7 +305,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 13,
 			"sheets":
 			[
 				{
@@ -380,15 +340,15 @@
 					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 1856,
+						"buffer_size": 1854,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1173,
-								1173
+								642,
+								642
 							]
 						],
 						"settings":
@@ -397,7 +357,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 252.0,
+						"translation.y": 188.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -407,15 +367,15 @@
 					"file": "js/components/thumbs-view.js",
 					"settings":
 					{
-						"buffer_size": 1688,
+						"buffer_size": 1736,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1488,
-								1488
+								1566,
+								1610
 							]
 						],
 						"settings":
@@ -431,32 +391,6 @@
 				},
 				{
 					"buffer": 3,
-					"file": "js/templates/about.html",
-					"settings":
-					{
-						"buffer_size": 1722,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								73,
-								73
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "js/components/app-view.js",
 					"settings":
 					{
@@ -483,7 +417,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "js/components/about-view.js",
 					"settings":
 					{
@@ -510,19 +444,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "js/components/work-view.js",
 					"settings":
 					{
-						"buffer_size": 624,
+						"buffer_size": 673,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								575,
-								575
+								634,
+								634
 							]
 						],
 						"settings":
@@ -537,7 +471,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "js/components/detail-view.js",
 					"settings":
 					{
@@ -564,113 +498,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "css/css_stylus/modules/about.styl",
-					"settings":
-					{
-						"buffer_size": 817,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								108,
-								108
-							]
-						],
-						"settings":
-						{
-							"auto_name": ".about",
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "css/css_stylus/fonts/fonts.styl",
-					"settings":
-					{
-						"buffer_size": 4059,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3786,
-								3802
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 194.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "css/css_stylus/index.styl",
-					"settings":
-					{
-						"buffer_size": 312,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								310,
-								310
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "js/templates/detail.html",
-					"settings":
-					{
-						"buffer_size": 420,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								51,
-								51
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
+					"buffer": 7,
 					"file": "css/css_stylus/modules/work.styl",
 					"settings":
 					{
@@ -681,8 +509,8 @@
 						"selection":
 						[
 							[
-								42,
-								42
+								195,
+								231
 							]
 						],
 						"settings":
@@ -697,19 +525,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 8,
 					"file": "css/css_stylus/modules/detail.styl",
 					"settings":
 					{
-						"buffer_size": 1085,
+						"buffer_size": 1107,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								35,
+								35
 							]
 						],
 						"settings":
@@ -724,7 +552,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 9,
 					"file": "js/components/models.js",
 					"settings":
 					{
@@ -751,60 +579,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
-					"file": "js/templates/home.html",
-					"settings":
-					{
-						"buffer_size": 1749,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								316,
-								316
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "js/templates/work.html",
-					"settings":
-					{
-						"buffer_size": 348,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 17,
+					"buffer": 10,
 					"file": "css/css_stylus/base/base.styl",
 					"settings":
 					{
@@ -831,7 +606,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 11,
 					"file": "css/css_stylus/base/mixins.styl",
 					"settings":
 					{
@@ -858,19 +633,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 12,
 					"file": "css/css_stylus/base/layout.styl",
 					"settings":
 					{
-						"buffer_size": 433,
+						"buffer_size": 1387,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								95,
-								95
+								1129,
+								1129
 							]
 						],
 						"settings":
@@ -879,13 +654,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 603.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 13,
+					"file": "css/css_stylus/modules/mobile.styl",
+					"settings":
+					{
+						"buffer_size": 3718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3637,
+								3637
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2309.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
 					"file": "js/templates/templates.js",
 					"settings":
 					{
@@ -913,19 +714,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 15,
 					"file": "css/css_stylus/modules/home.styl",
 					"settings":
 					{
-						"buffer_size": 2180,
+						"buffer_size": 2182,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								707,
-								714
+								1956,
+								2008
 							]
 						],
 						"settings":
@@ -934,7 +735,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 449.0,
+						"translation.y": 940.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -995,7 +796,7 @@
 		"width": 380.0
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 210.0,

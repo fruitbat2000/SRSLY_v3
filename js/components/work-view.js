@@ -25,6 +25,7 @@ function(templates, folioCollection, Handlebars, Backbone) {
 			this.$el.on('click', 'li', function(e) {
 				var id = $(this).data('id');
 				self.trigger('detailView', id);
+				$('html, body').animate({scrollTop:0}, 400);
 			});
 		}
 	});

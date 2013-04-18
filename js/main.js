@@ -29,7 +29,7 @@ function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, Thumb
 
 	Backbone.View.prototype.close = function(){
 		this.remove();
-		//this.unbind();
+		this.unbind();
 	}
 
 	var Router = Backbone.Router.extend({
