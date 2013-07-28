@@ -1,5 +1,9 @@
 <div class="row1 detail-view">
-	<a href="#work">&laquo; Back to list</a>
+	{{#if attributes.labs}}
+		<a href="#labs">&laquo; Back to list</a>
+	{{else}}
+		<a href="#work">&laquo; Back to list</a>
+	{{/if}}
 	<div class="column_6 col1">
 		<img src="{{attributes.images.[0]}}" alt="{{attributes.title}}">
 	</div>
@@ -7,6 +11,9 @@
 		<div class="project-details">
 			<h1>{{attributes.title}}</h1>
 			<p>{{{attributes.description}}}</p>
+			{{#if attributes.url}}
+				<a href="{{attributes.url}}" target="_blank">{{attributes.url}}</a>
+			{{/if}}
 			<section id="skills">
 				<h2>skills = [{{attributes.skills}}];</h2>
 			</section>

@@ -5,13 +5,13 @@ define([
 function(Backbone) {
 
 	function AppView() {
-		this.showView = function(view, id) {
+		this.showView = function(view, id, collection) {
 			if(this.currentView) {
 				this.currentView.close();
 			}
 			
 			this.currentView = view;
-			this.currentView.render(id);
+			this.currentView.render(id, collection);
 
 			if(this.currentView.id === 'detailView') {
 				$('#content').prepend(this.currentView.el);

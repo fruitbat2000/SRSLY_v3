@@ -15,10 +15,14 @@
 		&:nth-child(3n-1)
 			border-left:dashed 1px #333;
 			border-right:dashed 1px #333;
-		&:nth-last-child(-n+3)
+		/*&:nth-last-child(-n+3)
+			border-bottom:none;*/
+		&:last-child
+			border-right:dashed 1px #333;
 			border-bottom:none;
 	img
 		display:block;
+		width:300px;
 		margin:0 auto;
 		box-shadow:5px 5px 5px #999;
 		cursor:pointer;
@@ -29,6 +33,6 @@
 	font-family:"Quan-RoundedBold", Arial, sans-serif;
 	padding:15px;
 	border-radius:7px;
-	margin-top:100px;
+	margin:100px 0 50px 0;
 	& h2, h3
 		margin:0;

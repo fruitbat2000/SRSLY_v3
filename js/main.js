@@ -18,14 +18,14 @@ require([
 	"libs/handlebars",
 	"components/app-view",
 	"components/home-view",
-	"components/work-view",
+	"components/list-view",
 	"components/detail-view",
 	"components/thumbs-view",
 	"components/about-view",
 	"components/models"
 ],
 
-function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, ThumbsView, AboutView, models) {
+function(_, Backbone, Handlebars, AppView, HomeView, ListView, DetailView, ThumbsView, AboutView, models) {
 
 	Backbone.View.prototype.close = function(){
 		this.remove();
@@ -33,17 +33,21 @@ function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, Thumb
 	}
 
 	var Router = Backbone.Router.extend({
+		
 		routes: {
 			'home' : 'home',
 			'work' : 'work',
-			'folio/:id' : 'folio',
-			'about' : 'about'
+			'work/:id' : 'folio',
+			'about' : 'about',
+			'labs'	: "labs",
+			'labs/:id'	: "labFolio" 
 		},
 
 		initialize: function(){
 			this.appView = new AppView();
 			var homeView = new HomeView();
 			this.appView.showView(homeView);
+			this.folioColl = models;
 		},
 
 		home: function() {
@@ -53,10 +57,10 @@ function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, Thumb
 
 		work: function() {
 			var self = this;
-			var workView = new WorkView();
-			this.appView.showView(workView);
-			workView.on('detailView', function(id) {
-			 	self.navigate('folio/'+id, {trigger: true});
+			var listView = new ListView();
+			this.appView.showView(listView);
+			listView.on('detailView', function(id) {
+			 	self.navigate('work/'+id, {trigger: true});
 			});
 		},
 
@@ -64,13 +68,32 @@ function(_, Backbone, Handlebars, AppView, HomeView, WorkView, DetailView, Thumb
 			var self = this;
 			var detailView = new DetailView();
 			var thumbsView = new ThumbsView();
-			
-			this.appView.showView(detailView, id);
+			this.appView.showView(detailView, id, this.folioColl);
 			thumbsView.render(id);
 			thumbsView.on('detailView', function(id) {
-				console.log('triggered');
-				self.navigate('folio/'+id);
-				self.appView.showView(detailView, id);
+				self.navigate('work/'+id);
+				self.appView.showView(detailView, id, self.folioColl);
+			});
+		},
+
+		labs: function() {
+			var self = this;
+			var listView = new ListView();
+			this.appView.showView(listView);
+			listView.on('detailView', function(id) {
+				self.navigate('labs/'+id, {trigger: true});
+			});
+		},
+
+		labFolio: function(id) {
+			var self = this;
+			var detailView = new DetailView();
+			var thumbsView = new ThumbsView();
+			this.appView.showView(detailView, id, this.folioColl);
+			thumbsView.render(id);
+			thumbsView.on('detailView', function(id) {
+				self.navigate('labs/'+id);
+				self.appView.showView(detailView, id, self.folioColl);
 			});
 		},
 

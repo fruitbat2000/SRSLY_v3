@@ -2,9 +2,11 @@
 <div class="slider">
 	<ul class="list">
 	{{#each models}}
-		<li class="column_2">
-			<img src="{{this.attributes.images.[2]}}" alt="{{this.attributes.title}}" data-id="{{id}}">
-		</li>
+		{{#unless this.attributes.labs}}
+			<li class="column_2">
+				<img src="{{this.attributes.images.[0]}}" alt="{{this.attributes.title}}" data-id="{{id}}">
+			</li>
+			{{/unless}}
 	{{/each}}
 	</ul>
 </div>

@@ -4,14 +4,6 @@
 		"selected_items":
 		[
 			[
-				"mai",
-				"main-image"
-			],
-			[
-				"init",
-				"initEvents"
-			],
-			[
 				"home",
 				"home_tmpl"
 			]
@@ -31,63 +23,15 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 1854,
+				"buffer_size": 1824,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "js/components/thumbs-view.js",
+			"file": "js/components/home-view.js",
 			"settings":
 			{
-				"buffer_size": 1736,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/components/app-view.js",
-			"settings":
-			{
-				"buffer_size": 425,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/components/about-view.js",
-			"settings":
-			{
-				"buffer_size": 357,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/components/work-view.js",
-			"settings":
-			{
-				"buffer_size": 673,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/components/detail-view.js",
-			"settings":
-			{
-				"buffer_size": 416,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/css_stylus/modules/work.styl",
-			"settings":
-			{
-				"buffer_size": 649,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/css_stylus/modules/detail.styl",
-			"settings":
-			{
-				"buffer_size": 1107,
+				"buffer_size": 354,
 				"line_ending": "Windows"
 			}
 		},
@@ -100,6 +44,22 @@
 			}
 		},
 		{
+			"file": "js/templates/home.html",
+			"settings":
+			{
+				"buffer_size": 1749,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/templates/home.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "css/css_stylus/base/base.styl",
 			"settings":
 			{
@@ -108,10 +68,18 @@
 			}
 		},
 		{
-			"file": "css/css_stylus/base/mixins.styl",
+			"file": "css/css_stylus/modules/home.styl",
 			"settings":
 			{
-				"buffer_size": 582,
+				"buffer_size": 2182,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/modules/header.styl",
+			"settings":
+			{
+				"buffer_size": 609,
 				"line_ending": "Windows"
 			}
 		},
@@ -124,10 +92,58 @@
 			}
 		},
 		{
-			"file": "css/css_stylus/modules/mobile.styl",
+			"file": "css/css_stylus/index.styl",
 			"settings":
 			{
-				"buffer_size": 3718,
+				"buffer_size": 337,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/index.css",
+			"settings":
+			{
+				"buffer_size": 19283,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/components/app-view.js",
+			"settings":
+			{
+				"buffer_size": 425,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/components/detail-view.js",
+			"settings":
+			{
+				"buffer_size": 416,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "//mars/Approval/colgate-approval/2013/KBS_Form/js/init.js",
+			"settings":
+			{
+				"buffer_size": 2589,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/css_stylus/modules/detail.styl",
+			"settings":
+			{
+				"buffer_size": 1107,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/templates/projectThumbs.html",
+			"settings":
+			{
+				"buffer_size": 317,
 				"line_ending": "Windows"
 			}
 		},
@@ -140,10 +156,10 @@
 			}
 		},
 		{
-			"file": "css/css_stylus/modules/home.styl",
+			"file": "js/templates/work.html",
 			"settings":
 			{
-				"buffer_size": 2182,
+				"buffer_size": 348,
 				"line_ending": "Windows"
 			}
 		}
@@ -180,32 +196,14 @@
 	},
 	"file_history":
 	[
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.css",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/work.html",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/home.html",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/detail.html",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/fonts/fonts.styl",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/modules/about.styl",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/about.html",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/projectThumbs.html",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/thumbs-views.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/views.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/app-view.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/gruntfile.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/listPartial.html",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/node_modules/grunt/AUTHORS",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/list-partial.html",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/partials/list-partial.html",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/router.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/text.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/modules/header.styl",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/modules/home.styl",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/template.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/templates.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/workView.js",
+		"/C/xampp/htdocs/ColgateOralCare/Reviews/gruntfile.js",
+		"/C/Users/vkeeley/Dropbox/Web Design/SRSLY_v3/gruntfile.js",
+		"/C/Users/vkeeley/Dropbox/Web Design/SRSLY_v3/css/css_stylus/fonts/fonts.styl",
+		"/C/Users/vkeeley/Downloads/jquery.scrollTo-1.4.3.1 (1).js",
+		"/C/Users/vkeeley/Dropbox/Web Design/SRSLY_v3/js/components/eventProxy.js",
+		"/C/Users/vkeeley/Dropbox/Web Design/SRSLY_v3/js/text.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/home.js",
-		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/modernizr.js",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/components/views.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/underscore.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/home.hbs",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/templates/home",
@@ -214,9 +212,11 @@
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/handlebars.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/require.js",
 		"/C/Users/vix/Downloads/MyFontsWebfontsKit/MyFontsWebfontsKit/MyFontsWebfontsKit.css",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/libs/modernizr.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/js/main.js",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/modules/base.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/base/base - Copy.styl",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/index.css",
 		"/C/Users/vix/Downloads/MyFontsWebfontsOrderM4455651/MyFontsWebfontsOrderM4455651/MyFontsWebfontsOrderM4455651.js",
 		"/C/Users/vix/Downloads/SRSLY_fonts/SRSLY_fonts/SRSLY_fonts.css",
 		"/C/Users/vix/Dropbox/Web Design/Labs/profitTracker/js/main.js",
@@ -226,6 +226,7 @@
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/base.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/header.styl",
 		"/C/Users/vix/Dropbox/Web Design/Labs/profitTracker/index.html",
+		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/inedx.styl",
 		"/C/Users/vix/Dropbox/Web Design/SRSLY_v3/css/css_stylus/index.styl.css",
 		"/C/Users/vix/Dropbox/Web Design/CHRC/chalfont_heights/archive.php",
@@ -259,7 +260,6 @@
 		"height": 0.0,
 		"where_history":
 		[
-			""
 		]
 	},
 	"find_state":
@@ -267,11 +267,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"append",
-			"detailView",
 			"id",
-			"etailView",
-			"ciol",
 			"));\n",
 			"webfonts",
 			"black",
@@ -305,7 +301,7 @@
 	"groups":
 	[
 		{
-			"selected": 13,
+			"selected": 14,
 			"sheets":
 			[
 				{
@@ -320,8 +316,8 @@
 						"selection":
 						[
 							[
-								686,
-								686
+								0,
+								0
 							]
 						],
 						"settings":
@@ -340,15 +336,15 @@
 					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 1854,
+						"buffer_size": 1824,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								642,
-								642
+								0,
+								0
 							]
 						],
 						"settings":
@@ -357,206 +353,17 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 188.0,
+						"translation.y": 252.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "js/components/thumbs-view.js",
+					"file": "js/components/home-view.js",
 					"settings":
 					{
-						"buffer_size": 1736,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1566,
-								1610
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 121.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/components/app-view.js",
-					"settings":
-					{
-						"buffer_size": 425,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								269,
-								269
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "js/components/about-view.js",
-					"settings":
-					{
-						"buffer_size": 357,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								348,
-								348
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "js/components/work-view.js",
-					"settings":
-					{
-						"buffer_size": 673,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								634,
-								634
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "js/components/detail-view.js",
-					"settings":
-					{
-						"buffer_size": 416,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								219,
-								219
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "css/css_stylus/modules/work.styl",
-					"settings":
-					{
-						"buffer_size": 649,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								195,
-								231
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "css/css_stylus/modules/detail.styl",
-					"settings":
-					{
-						"buffer_size": 1107,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								35,
-								35
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "js/components/models.js",
-					"settings":
-					{
-						"buffer_size": 4711,
+						"buffer_size": 354,
 						"regions":
 						{
 						},
@@ -579,7 +386,89 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 3,
+					"file": "js/components/models.js",
+					"settings":
+					{
+						"buffer_size": 4711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3535,
+								3535
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/templates/home.html",
+					"settings":
+					{
+						"buffer_size": 1749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/templates/home.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "css/css_stylus/base/base.styl",
 					"settings":
 					{
@@ -606,19 +495,47 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "css/css_stylus/base/mixins.styl",
+					"buffer": 7,
+					"file": "css/css_stylus/modules/home.styl",
 					"settings":
 					{
-						"buffer_size": 582,
+						"buffer_size": 2182,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								580,
-								580
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"spell_check": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "css/css_stylus/modules/header.styl",
+					"settings":
+					{
+						"buffer_size": 609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -633,7 +550,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 9,
 					"file": "css/css_stylus/base/layout.styl",
 					"settings":
 					{
@@ -644,8 +561,8 @@
 						"selection":
 						[
 							[
-								1129,
-								1129
+								0,
+								0
 							]
 						],
 						"settings":
@@ -654,25 +571,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 603.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "css/css_stylus/modules/mobile.styl",
+					"buffer": 10,
+					"file": "css/css_stylus/index.styl",
 					"settings":
 					{
-						"buffer_size": 3718,
+						"buffer_size": 337,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3637,
-								3637
+								0,
+								0
 							]
 						],
 						"settings":
@@ -680,13 +597,176 @@
 							"syntax": "Packages/Stylus/Stylus.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2309.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "css/index.css",
+					"settings":
+					{
+						"buffer_size": 19283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2511.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "js/components/app-view.js",
+					"settings":
+					{
+						"buffer_size": 425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "js/components/detail-view.js",
+					"settings":
+					{
+						"buffer_size": 416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 14,
+					"file": "//mars/Approval/colgate-approval/2013/KBS_Form/js/init.js",
+					"settings":
+					{
+						"buffer_size": 2589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "css/css_stylus/modules/detail.styl",
+					"settings":
+					{
+						"buffer_size": 1107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "js/templates/projectThumbs.html",
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
 					"file": "js/templates/templates.js",
 					"settings":
 					{
@@ -697,8 +777,8 @@
 						"selection":
 						[
 							[
-								14,
-								14
+								0,
+								0
 							]
 						],
 						"settings":
@@ -714,28 +794,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
-					"file": "css/css_stylus/modules/home.styl",
+					"buffer": 18,
+					"file": "js/templates/work.html",
 					"settings":
 					{
-						"buffer_size": 2182,
+						"buffer_size": 348,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1956,
-								2008
+								329,
+								329
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 940.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -745,7 +824,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 0.0
 	},
 	"input":
 	{
@@ -796,7 +875,7 @@
 		"width": 380.0
 	},
 	"show_minimap": true,
-	"show_open_files": true,
+	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 210.0,

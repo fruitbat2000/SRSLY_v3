@@ -1,8 +1,10 @@
 <ul class="folio-list">
 	{{#each models}}
-	<li class="column_4" data-id="{{id}}">
-		<img src="{{this.attributes.images.[1]}}" alt="{{this.attributes.title}}">
-	</li>
+		{{#unless this.attributes.labs}}
+			<li class="column_4" data-id="{{id}}">
+				<img src="{{this.attributes.images.[0]}}" alt="{{this.attributes.title}}">
+			</li>
+		{{/unless}}
 	{{/each}}
 </ul>
 <section id="client-list">

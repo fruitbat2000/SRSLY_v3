@@ -574,6 +574,8 @@ header nav li a {
   padding: 25px 0;
   border-bottom: dashed 1px #333;
   position: relative;
+/*&:nth-last-child(-n+3)
+			border-bottom:none;*/
 }
 .folio-list li:hover {
   background: #098c7f;
@@ -585,11 +587,13 @@ header nav li a {
   border-left: dashed 1px #333;
   border-right: dashed 1px #333;
 }
-.folio-list li:nth-last-child(-n+3) {
+.folio-list li:last-child {
+  border-right: dashed 1px #333;
   border-bottom: none;
 }
 .folio-list img {
   display: block;
+  width: 300px;
   margin: 0 auto;
   box-shadow: 5px 5px 5px #999;
   cursor: pointer;
@@ -601,11 +605,23 @@ header nav li a {
   font-family: "Quan-RoundedBold", Arial, sans-serif;
   padding: 15px;
   border-radius: 7px;
-  margin-top: 100px;
+  margin: 100px 0 50px 0;
 }
 #client-list h2,
 #client-list h3 {
   margin: 0;
+}
+.labs-intro p {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+.folio-list.labs-list li:nth-child(3n-1) {
+  border-left: dashed 1px #333;
+  border-right: dashed 1px #333;
+}
+.folio-list.labs-list li:last-child {
+  border-right: dashed 1px #333;
+  border-bottom: none;
 }
 .detail-view {
   margin: 30px 0 50px 0;
@@ -629,6 +645,10 @@ header nav li a {
 .detail-view .col2 .project-details p {
   font-size: 22px;
   font-size: 2.2rem;
+}
+.detail-view .col2 .project-details a {
+  margin-top: 30px;
+  font-weight: bold;
 }
 .detail-view #skills {
   margin: 30px 0 0 0;
@@ -837,6 +857,10 @@ header nav li a {
   .folio-list li img {
     width: 280px;
     margin: 0 auto;
+  }
+  .folio-list.labs-list li:nth-child(3n-1) {
+    border-left: none;
+    border-right: none;
   }
   #client-list {
     margin: 30px 0;

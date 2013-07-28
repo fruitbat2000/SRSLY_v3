@@ -10,11 +10,19 @@ function(templates, folioCollection, Handlebars, Backbone) {
 	var ThumbsView = Backbone.View.extend({
 		tagName: 'section',
 		id: 'project-thumbs',
-		tmpl: hbs.projectThumbs,
 		collection: folioCollection,
 
 		events: {
 			'click .list img' : 'triggerRoute'
+		},
+
+		initialize: function() {
+			var hash = window.location.hash.replace(/\/.*/,'');
+			if(hash === '#work') {
+				this.tmpl = hbs.projectThumbs;
+			} else {
+				this.tmpl = hbs.labsThumbs;
+			}
 		},
 
 		render: function(id) {
