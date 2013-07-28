@@ -1,0 +1,13 @@
+<section class="labs-intro">
+	<h1>Labs</h1>
+	<p>Below you can find a few of the personal projects I've taken on as a way to learn new stuff. Be warned, they're not exactly polished and probably work best in a modern browser ;)</p>
+</section>
+<ul class="folio-list labs-list">
+	{{#each models}}
+		{{#if this.attributes.labs}}
+			<li class="column_4" data-id="{{id}}">
+				<img src="{{this.attributes.images.[0]}}" alt="{{this.attributes.title}}">
+			</li>
+		{{/if}}
+	{{/each}}
+</ul>

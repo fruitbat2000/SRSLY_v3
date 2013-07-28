@@ -1,0 +1,14 @@
+.labs-intro
+	p
+		font-size-rem(2.2);
+
+.folio-list.labs-list
+	li
+		&:nth-child(3n-1)
+			border-left:dashed 1px #333;
+			border-right:dashed 1px #333;
+		/*&:nth-last-child(-n+3)
+			border-bottom:none;*/
+		&:last-child
+			border-right:dashed 1px #333;
+			border-bottom:none;

@@ -1,0 +1,13 @@
+<a class="column_1 scroll-left" href="">&lsaquo;</a>
+<div class="slider">
+	<ul class="list">
+	{{#each models}}
+		{{#if this.attributes.labs}}
+			<li class="column_2">
+				<img src="{{this.attributes.images.[0]}}" alt="{{this.attributes.title}}" data-id="{{id}}">
+			</li>
+		{{/if}}
+	{{/each}}
+	</ul>
+</div>
+<a class="column_1 scroll-right" href="">&rsaquo;</a>
