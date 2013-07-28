@@ -462,6 +462,9 @@ header nav li a {
   top: 10px;
   box-shadow: 5px 5px 5px #999;
 }
+.ie10 .main-image .img2 img {
+  left: 0px;
+}
 #skills {
   background: #333;
   color: #f2f1d4;
